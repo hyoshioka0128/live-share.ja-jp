@@ -1,0 +1,41 @@
+<!-- markdownlint-disable MD022 MD025 -->
+# 概要
+## [Visual Studio Live Share とは](index.md)
+# クイックスタート
+## [最初のプロジェクトを共有する](quickstart/share.md)
+## [最初のセッションに参加する](quickstart/join.md)
+# 使い方ガイド:VS Code
+## [概要](use/vscode.md)
+## [インストール](use/vscode.md#installation)
+## [サインイン](use/vscode.md#sign-in)
+## [プロジェクトを共有する](use/vscode.md#share-a-project)
+## [セッションに参加する](use/vscode.md#join-a-collaboration-session)
+## [共同編集](use/vscode.md#co-editing)
+## [フォローとフォーカス](use/vscode.md#following)
+## [共同デバッグ](use/vscode.md#co-debugging)
+## [サーバーを共有する](use/vscode.md#share-a-server)
+## [ターミナルを共有する](use/vscode.md#share-a-terminal)
+# 使い方ガイド:Visual Studio
+## [概要](use/vs.md)
+## [インストール](use/vs.md#installation)
+## [サインイン](use/vs.md#sign-in)
+## [プロジェクトを共有する](use/vs.md#share-a-project)
+## [セッションに参加する](use/vs.md#join-a-collaboration-session)
+## [共同編集](use/vs.md#co-editing)
+## [フォローとフォーカス](use/vs.md#following)
+## [共同デバッグ](use/vs.md#co-debugging)
+## [サーバーを共有する](use/vs.md#share-a-server)
+## [ターミナルを共有する](use/vs.md#share-a-terminal)
+# 関連項目
+## [セキュリティ](reference/security.md)
+## [接続](reference/connectivity.md)
+## [言語サポート](reference/platform-support.md)
+## [拡張機能のサポート](reference/extensions.md)
+## [一般的なユース ケース](reference/use-cases.md)
+## [Linux インストールの詳細](reference/linux.md)
+## [リリース ノート](https://aka.ms/vsls-releases)
+# リソース
+## [トラブルシューティング](troubleshooting.md)
+## [フィードバックを送信する](support.md)
+## [FAQ](faq.md)
+## [ユーザー プロファイル](user-profile.md)
