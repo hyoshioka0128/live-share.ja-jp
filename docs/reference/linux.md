@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 10/6/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 013eb234e5acca02a39e90f0697a146039bb2a89
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 9ac16b0e598fb07446c2b682397684b7e2e4709a
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255928"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640134"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,17 +26,17 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="linux-installation-details"></a>Linux のインストールの詳細
 
-Linux は変化の激しい環境であり、膨大な数のデスクトップ環境とディストリビューションを動作させる複雑になることができます。 サポートされているバージョンを引き続き使用する場合**Ubuntu Desktop** (16.04 以上)、 **CentOS 7**、または**Fedora ワークステーション**(27 以上) のみを使用して**VS の公式のディストリビューションコード**、簡単にプロセスを検索する必要があります。 ただし、非標準構成またはダウン ストリームの配布を使用していることは可能性がありますか、いくつかの時差は発生しない可能性があります。 このドキュメントは、要件にいくつかの情報を提供します参考にしてトラブルシューティングの詳細をいくつかを取得および実行する構成が唯一のコミュニティである場合でもサポートされていません。 Live Share のみがサポートされます。 注**64 ビット Linux**します。
+Linux は変化の激しい環境であり、膨大な数のデスクトップ環境やディストリビューションがあるため、作業が複雑になる可能性があります。 サポートされているバージョンを引き続き使用する場合**Ubuntu Desktop** (16.04 以上)、 **CentOS 7**、または**Fedora ワークステーション**(27 以上) のみを使用して**VS の公式のディストリビューションコード**、簡単にプロセスを検索する必要があります。 ただし、標準ではない構成またはダウンストリーム ディストリビューションを使用する場合は、問題が発生する可能性があります。 このドキュメントは、要件にいくつかの情報を提供します参考にしてトラブルシューティングの詳細をいくつかを取得および実行する構成が唯一のコミュニティである場合でもサポートされていません。 Live Share のみがサポートされます。 注**64 ビット Linux**します。
 
-## <a name="install-linux-prerequisites"></a>Linux の前提条件をインストールします。
+## <a name="install-linux-prerequisites"></a>Linux の前提条件をインストールする
 
-Linux のディストリビューションによっては、Live Share が動作するためのライブラリではありません。 既定では、Live Share は、検出し、Linux の前提条件をインストールしようとします。 Live Share 不足しているライブラリがそれらをインストールするためのアクセス許可を求めるから発生することのある問題を検出すると、トースト通知を確認します。
+Linux のディストリビューションによっては、Live Share が機能するために必要なライブラリがありません。 既定では、Live Share は自動で Linux の前提条件を検出してインストールしようとします。 Live Share でライブラリの不足が原因の可能性がある問題が発生すると、それらをインストールする許可を求めるトースト通知が表示されます。
 
 ![Linux の前提条件が欠落しているトースト通知が表示されたメッセージ](../media/vscode-linux-prereq-missing.png)
 
-[インストール] をクリックすると、OS が確認入力は、管理者/ルート (sudo) パスワードを続行することで、ターミナル ウィンドウが表示されます。 スクリプトが正常に完了すると仮定すると、再読み込みするを確認するメッセージが表示されたら、Visual Studio Code は、すべての設定にする必要があります! チェック アウトすることも**[ディストリビューションによってヒント](#tips-by-distribution)** の他のヒントと回避策が存在する場合。
+[インストール] をクリックすると、OS が確認入力は、管理者/ルート (sudo) パスワードを続行することで、ターミナル ウィンドウが表示されます。 スクリプトが正常に完了すると仮定すると、再読み込みするを確認するメッセージが表示されたら、Visual Studio Code は、すべての設定にする必要があります! 他のヒントや回避策については、 **[ディストリビューション別のヒント](#tips-by-distribution)** を確認することもお勧めします。
 
-スクリプトがお使いのディストリビューションをサポートしていないことを示すメッセージが表示される場合を参照してください**[コミュニティのサポートのディストリビューションに関するヒント](#tips-for-unsupported-distros)** については、コミュニティが私たちと共有します。
+スクリプトがディストリビューションをサポートしていないことを示すメッセージが表示される場合は、 **[コミュニティがサポートするディストリビューションのヒント](#tips-for-unsupported-distros)** を参照してください。コミュニティが Microsoft と共有している情報が見つかります。
 
 場合する**な VS Code のコマンドを実行するを望まない**を再実行するこのスクリプトの最新バージョン、いつでも手動でターミナル ウィンドウで次のコマンドを使用することもできます。
 
@@ -65,7 +63,7 @@ Linux のディストリビューションによっては、Live Share が動作
 | Fedora ワークステーション 27 (64 ビット) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 への GNOME デスクトップ (64 ビット) | &lt;none&gt; | &lt;none&gt; |
 
-参照してください**[コミュニティのサポートのディストリビューションに関するヒント](#tips-for-community-supported-distros)** Debian 以外の他の方法については Ubuntu または全文ベースのディストリビューション/。
+参照してください **[コミュニティのサポートのディストリビューションに関するヒント](#tips-for-community-supported-distros)** Debian 以外の他の方法については Ubuntu または全文ベースのディストリビューション/。
 
 追加の詳細についても確認できます[下](#detailed-library-requirements)Live Share 必要がある特定のライブラリにします。
 
@@ -79,7 +77,7 @@ Linux のディストリビューションによっては、Live Share が動作
 
 | 配布 | 作業しますか。 | バニラが不足しているライブラリをインストールします。 | 追加の手順 |
 |--------------|----------|-------------------|------------------|
-| Arch Linux (64 ビット) | はい | によって異なります。 可能なライブラリ: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>サポートされている、[前提条件のインストール スクリプト](#install-linux-prerequisites)します。</li><li>使用して、 [visual studio コード bin](https://aur.archlinux.org/packages/visual-studio-code-bin) for VS Code AUR のパッケージ。</li><li>`sudo` する必要がありますを使用するには、自動化された前提条件のインストール スクリプト。</li><li>`gnome-keyring` その他必要があります[セットアップ手順](https://wiki.archlinux.org/index.php/GNOME/Keyring)一部のデスクトップ環境でします。</ul> |
+| Arch Linux (64 ビット) | [はい] | によって異なります。 可能なライブラリ: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>サポートされている、[前提条件のインストール スクリプト](#install-linux-prerequisites)します。</li><li>使用して、 [visual studio コード bin](https://aur.archlinux.org/packages/visual-studio-code-bin) for VS Code AUR のパッケージ。</li><li>`sudo` する必要がありますを使用するには、自動化された前提条件のインストール スクリプト。</li><li>`gnome-keyring` その他必要があります[セットアップ手順](https://wiki.archlinux.org/index.php/GNOME/Keyring)一部のデスクトップ環境でします。</ul> |
 | Manjaro 17.1 (64 ビット) | [はい] | `xorg-xprop liburcu` | <ul><li>サポートされている、[前提条件のインストール スクリプト](#install-linux-prerequisites)します。</li><li>使用して、 [visual studio コード bin](https://aur.archlinux.org/packages/visual-studio-code-bin) for VS Code AUR のパッケージ。</li></ul> |
 | openSuSE LEAP 15 KDE (64 ビット) | [はい] | `libopenssl1_0_0 gnome-keyring` | <ul><li>前提条件のインストール スクリプトによってサポートされています。</li></ul> |
 | Solus 3 (64 ビット) | [はい] | `xprop` | <ul><li>サポートされている、[前提条件のインストール スクリプト](#install-linux-prerequisites)します。</li><li>バージョン、 `vscode` 57 をリリースする前にパッケージには、必要な product.json 値が不足しているが ([後述](#vs-code-oss-issues))。 アップグレード、`vscode`この問題を解決するのにはパッケージです。</li></ul> |
@@ -147,13 +145,13 @@ Debian 9 とダウン ストリームのディストリビューションの Ubu
 
 参照してください[上](#tips-for-community-supported-distros)を使用する配布が正常に機能するかどうかの詳細についてはします。
 
-## <a name="linux-browser-integration"></a>Linux のブラウザーの統合
+## <a name="linux-browser-integration"></a>Linux ブラウザーの統合
 
-Visual Studio Live 共有通常**追加のインストール手順は必要ありません**Linux 上のブラウザーの統合を有効にします。
+通常、Visual Studio Live Share では、Linux 上でブラウザーの統合を有効にするために**追加のインストール手順が必要ありません**。
 
 これを実現する Live Share 自動的にデスクトップのファイルが配置で`~/.local/share/applications`と必要なランチャー自体で`~/.local/share/vsliveshare`拡張機能が最初に初期化します。 コンソール アプリケーションは、これが成功した場合に、アクションは必要ありません。
 
-場合によっては、ディストリビューションかサポートしていないこの場所または取得、バニラのインストールと連動するように調整が必要です。 このような場合は、Live Share にフォールバックを使用して`/usr/local/share`代わりにします。 その結果、 **admin (sudo) パスワードが必要である通知されます**インストール プロセスを完了します。 ブラウザー起動ツールをインストールすることを示す、ターミナル ウィンドウが表示されます。 単に入力を求められたら、パスワードを入力し、ターミナル ウィンドウを閉じる、インストールが完了したら enter キーを押します。
+場合によっては、ディストリビューションかサポートしていないこの場所または取得、バニラのインストールと連動するように調整が必要です。 このような場合は、Live Share にフォールバックを使用して`/usr/local/share`代わりにします。 その結果、 **admin (sudo) パスワードが必要である通知されます**インストール プロセスを完了します。 ブラウザー ランチャーのインストール先を示すターミナル ウィンドウが表示されます。 入力を求められたらパスワードを入力し、インストールが完了したら Enter キーを押してターミナル ウィンドウを閉じます。
 
 コマンドは、自分で代わりに実行する場合は、「コピー代わりに」ターミナル コマンドを代わりに、クリップボードにコピーするをクリックすることができます。
 
@@ -161,7 +159,7 @@ Visual Studio Live 共有通常**追加のインストール手順は必要あ�
 
 ## <a name="see-also"></a>関連項目
 
-- [方法:Visual Studio Code を使用して共同作業します。](../use/vscode.md)
+- [方法:Visual Studio Code を使用して共同作業する](../use/vscode.md)
 - [Live Share の接続要件](connectivity.md)
 - [Live Share のセキュリティ機能](security.md)
 

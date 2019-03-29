@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: troubleshooting
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8d20ec73d9cadfefced65c04b1ef18f6e844167d
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 5fc611714d148a9ba1d5a6848e0399af753d1a37
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255875"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640212"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="troubleshooting-visual-studio-live-share"></a>トラブルシューティングの Visual Studio Live Share
 
-この記事では、トラブルシューティングのヒント、回避策、および一般的な問題と質問の回答について説明します。 確認することも、 [FAQ](faq.md)します。
+この記事では、トラブルシューティングのヒント、回避策、および一般的な問題と質問の回答について説明します。 確認することも、 [FAQ](faq.md)します。 
 
 ## <a name="installation--tool-requirements"></a>インストール要件をツール/
 
@@ -38,7 +36,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 |------|---------|------------|
 | VS | 拡張機能インストーラー <strong>Visual Studio のバージョンを見つけることができません</strong>Visual Studio Live Share の拡張機能をインストールしようとしたときに使用します。 | Visual Studio Live Share 必要**Visual Studio 2017 バージョン 15.6**以上のホストとゲストの両方。 最新の安定したインストール[Visual Studio 2017 の更新プログラム](https://visualstudio.com/vs/)再試行してください。|
 | VS Code | MacOS で VS Code と Visual Studio Live Share を使用しようとするときにエラーが表示されます<strong>El Capitan 以下</strong>します。 | Visual Studio Live Share の OS のサポートは、.NET Core に依存している現在[macOS Sierra のみをサポート以降。]((https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md).) |
-| VS Code | A"**依存関係をインストールできませんでした**"実行中にエラーが表示されます拡張機能は**インストールの完了**最初に開始するかエラーが発生**見つからなかったりファイルが既に存在します**. | 使用していることを確認、**良好なネットワーク接続**します。 可能性がありますに実行する場合を**プロキシまたはファイアウォール**問題。 参照してください[接続のトラブルシューティング](#connectivity)します。 <br /><br />|
+| VS Code | A"**依存関係をインストールできませんでした**"実行中にエラーが表示されます拡張機能は**インストールの完了**最初に開始するかエラーが発生**見つからなかったりファイルが既に存在します。** | 使用していることを確認、**良好なネットワーク接続**します。 可能性がありますに実行する場合を**プロキシまたはファイアウォール**問題。 参照してください[接続のトラブルシューティング](#connectivity)します。 <br /><br />|
 | VS Code | Marketplace から、Visual Studio Live Share の拡張機能をインストールする<strong>その VS Code の/内部関係者が安定したバージョンにインストール</strong>は目的のバージョンではなく。 | VS Code の安定版または好みに応じて内部関係者を開始、"extensions" タブをクリックして、"Visual Studio Live Share"を検索およびそこからインストールします。 |
 | VS Code (**Linux**) | Live Share の拡張機能がアクティブにならないと**ステータス バーの項目が表示されない**に拡張機能をインストールした後**Linux**します。 | Visual Studio Live Share は、さまざまな既定の Linux の特定のディストリビューションで満たされる可能性はない Linux の前提条件のある .NET Core 2.0 に依存します。 参照してください[詳細についてはここで](reference/linux.md#install-linux-prerequisites)で何をインストールする必要があります。 |
 
@@ -66,8 +64,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 |------|----------------|------------|
 | すべて | <strong>共有/結合。</strong>タイムアウトまたは接続できないというエラーが発生します。 | 参照してください[接続のトラブルシューティング](#connectivity)します。 |
 | VS Code | <strong>Join:</strong>した<strong>いないメッセージを表示/VS Code を起動できません</strong>[参加] ページをブラウザーで開いた後です。 |  ヒント: <ul><li>したかどうかを必ず<i>を少なくとも 1 回、VS Code を起動し、インストールをステータス バーに完了するを待機します。</i></li><li>うまく行かない場合は、実行してみてください、"ライブ共有。「ランチャー セットアップ コマンド。</li><li>**Linux ユーザー**:上記のコマンドを実行するときに、管理者 (sudo) パスワードを入力するように求められたら、これを行ってください。</li><li>最後を参照してください[手動による結合](reference/manual-join.md)問題を回避します。</li></ul> この問題が発生した場合は、何可能性がありますが起こっているか、これを参照してください。 ぜひください[バグのログ記録](https://aka.ms/vsls-new-issue)します。 |
-| VS | <strong>Join:</strong>した<strong>メッセージを表示/VS を起動することができません</strong>[参加] ページをブラウザーで開いた後です。 |  参照してください[を手動で結合](reference/manual-join.md)します。<br /><br /> そのため、ログを参照してくださいにも加わってください[バグのログ記録](https://aka.ms/vsls-problem)Visual Studio の [レポートの問題] を使用します。機能です。 |
-| すべて | <strong>Join:</strong>希望する<strong>Visual Studio に直接結合のリンクを貼り付ける/コードを VS</strong> web リンクをクリックするのではなく。 | 参照してください[を手動で結合](reference/manual-join.md)します。 |
+| VS | <strong>Join:</strong>した<strong>メッセージを表示/VS を起動することができません</strong>[参加] ページをブラウザーで開いた後です。 |  「[手動で参加する](reference/manual-join.md)」を参照してください。<br /><br /> そのため、ログを参照してくださいにも加わってください[バグのログ記録](https://aka.ms/vsls-problem)Visual Studio の [レポートの問題] を使用します。機能です。 |
+| すべて | <strong>Join:</strong>希望する<strong>Visual Studio に直接結合のリンクを貼り付ける/コードを VS</strong> web リンクをクリックするのではなく。 | 「[手動で参加する](reference/manual-join.md)」を参照してください。 |
 | すべて | <strong>Join:</strong>というメッセージを参照してください"**、ワークスペースの所有者がオフラインになるよう**、"ブラウザー経由で結合するとき。 | 可能な回避策:<br /><ul><li>お試しください[手動による結合](reference/manual-join.md)します。 リージョン間での問題が検出された (例: east および west 米国) 結合を手動での結合に影響しないサービスの問題が原因です。</li><li>ライブの共有は、"auto"接続モードで実行する場合は、ホストに直接ルーティングすることができない可能性があります。 お試しください[リレー モード](reference/connectivity.md)します。</li></ul>参照してください[接続のトラブルシューティング](#connectivity)可能性について |
 | VS Code | <strong>Join:</strong>ブラウザー経由で参加している<strong>サインインする前に</strong>、サインインするように要求されなかった場合</strong>、し、結合が完了したことはありません。 |  これは、[既知のバグ](https://github.com/MicrosoftDocs/live-share/issues/167)します。 サインインにサインインして、もう一度参加し、ステータス バーの項目をクリックします。 |
 
@@ -81,7 +79,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 |------|------|----------------|
 | すべて | 使用している、<strong>プロキシ</strong>との接続の問題の数が表示されます | プロキシの設定は難しくなってきます。  設定を試みてください、 **HTTP_PROXY**と**HTTPS_PROXY**環境変数**グローバル**し、ツールを再起動します。 参照してください[プロキシ設定](reference/connectivity.md#proxies)の詳細。 まだはサポートされていません、いくつかの構成が残っているため、[お知らせ](https://github.com/MicrosoftDocs/live-share/issues/86)がこれが機能しない場合。 |
 | VS Code | 取得する拡張機能をインストールし、VS Code を初めて起動した後、 <strong>「インストールの完了」がステータス バーに表示する場合はエラー</strong>します。 |  インターネットや download.visualstudio.microsoft.com へのアクセスにアクセスすることはできませんまたは download.microsoft.com ポート 443 では、個人または会社のファイアウォールによってブロックされます。 参照してください[ここ](https://github.com/MicrosoftDocs/live-share/issues/58)理由についての Live Share はこの時点で何かをダウンロードする必要があります。 |
-| すべて | したら<strong>Visual Studio Live Share にサインインすることができません</strong> | アクセスまたはインターネットにアクセスすることはできません *. liveshare.vsengsaas.visualstudio.com 80/443 が個人または会社のファイアウォールによってブロックされているポート。 入力 https://insiders.liveshare.vsengsaas.visualstudio.comブラウザーで、Visual Studio Live Share ホーム ページに着陸したことを確認します。 |
+| すべて | したら<strong>Visual Studio Live Share にサインインすることができません</strong> | アクセスまたはインターネットにアクセスすることはできません *. liveshare.vsengsaas.visualstudio.com 80/443 が個人または会社のファイアウォールによってブロックされているポート。 入力 [https://insiders.liveshare.vsengsaas.visualstudio.com](https://insiders.liveshare.vsengsaas.visualstudio.com) ブラウザーで、Visual Studio Live Share ホーム ページに着陸したことを確認します。 |
 | すべて | <strong>Auto モード</strong>(既定値) で、サインインしますが、表示することが、<strong>タイムアウトまたは接続エラー</strong>または共有のいずれかに参加するときにします。 | いずれか両方ダイレクトし、リレー モードは、接続に失敗、または auto モードでのバグがあります。 後に接続できない場合は[に出力するための切り替えやリレー モード](reference/connectivity.md#changing-the-connection-mode)、ください[バグを発生させる](https://aka.ms/vsls-problem)します。 |
 | すべて | <strong>ダイレクト モード</strong>、サインインしますが、表示することが、<strong>タイムアウトまたは接続エラー</strong>または共有のいずれかに参加するときにします。 | ゲストとホストが直接接続できません。 お試しください[モードを自動またはリレー](reference/connectivity.md#changing-the-connection-mode)に、問題が解決したかどうかを参照してください。 必要があります[が個人のファイアウォールを手動で Live Share を許可する](reference/connectivity.md#manually-adding-a-firewall-entry)または単に中継モードを使用します。 |
 | すべて | <strong>リレー モード</strong>は、サインインすることが通知されます、<strong>タイムアウトまたは接続エラー</strong>または共有のいずれかに参加するときにします。 | アクセス *. servicebus.windows.net にポート 80/443 がブロックされている、個人または会社のファイアウォールによってブロックされます。 お試しください[ダイレクト モード](reference/connectivity.md#changing-the-connection-mode)します。 |
@@ -103,7 +101,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 参照
 
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
-- [すべての機能要求や制限事項](https://aka.ms/vsls-feature-requests)
+- [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
 - [Live Share の接続要件](reference/connectivity.md)
 - [Linux インストールの詳細](reference/linux.md)
 - [言語とプラットフォームのサポート](reference/platform-support.md)

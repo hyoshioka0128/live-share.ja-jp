@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 05/21/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: lostintangent
 ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2ef982a00a06cb312cd0270ba65abd308518d99e
-ms.sourcegitcommit: c20a6ddef4f184678a2d6cf1a2493d42ea3a4356
+ms.openlocfilehash: d4dc3f2a6dfd8e0951a944cf4f487cedc49e4370
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2019
-ms.locfileid: "57725702"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640147"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -150,6 +148,6 @@ Live Share を使用すると、すぐに、プロジェクトを他のユーザ
 - [Live Share の接続要件](connectivity.md)
 - [Live Share のセキュリティ機能](security.md)
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
-- [すべての機能要求や制限事項](https://aka.ms/vsls-feature-requests)
+- [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。

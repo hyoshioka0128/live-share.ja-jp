@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/25/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: lostintangent
 ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 5c8429779bcfe39842ba298c3b6371daa1cf7fe4
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 91e80df324a0b2f49fdf37a5270cf7b86fca5c7c
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255939"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640225"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -193,6 +191,6 @@ Visual Studio Live Share の機能は言語とプラットフォームのアプ�
 - [Live Share の接続要件](connectivity.md)
 - [Live Share のセキュリティ機能](security.md)
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
-- [すべての機能要求や制限事項](https://aka.ms/vsls-feature-requests)
+- [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。

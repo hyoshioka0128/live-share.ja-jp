@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 6edc5bcf18dde6f84a4972a1efd755592cbef18c
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: c685df798fc10b449c3e73db678e3b5d34e73ef0
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256125"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640082"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -83,7 +81,7 @@ Visual Studio Live Share のすべての接続は、ことコラボレーショ�
 
 ## <a name="manually-adding-a-firewall-entry"></a>ファイアウォールのエントリを手動で追加します。
 
-直接モードは、パーソナル ファイアウォールが許可が必要です、上記のように、 **vsls エージェント**5990 5999 の範囲は、ポートで接続を受け入れるようにします。 直接モードを使用して、、ファイアウォールに vsls エージェントのエントリがないことを見つけた場合は、手動で追加することができます。 この方法は、ファイアウォール ソフトウェアによって異なりますが、に関する情報を得られる**[ここで Windows ファイアウォールを構成する](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)** します。
+直接モードは、パーソナル ファイアウォールが許可が必要です、上記のように、 **vsls エージェント**5990 5999 の範囲は、ポートで接続を受け入れるようにします。 直接モードを使用して、、ファイアウォールに vsls エージェントのエントリがないことを見つけた場合は、手動で追加することができます。 この方法は、ファイアウォール ソフトウェアによって異なりますが、に関する情報を得られる **[ここで Windows ファイアウォールを構成する](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)** します。
 
 Vsls エージェントのエントリが表示されない場合、エージェント実行可能ファイルで見つかります、次の場所のいずれか。
 
@@ -125,8 +123,8 @@ Visual Studio Live Share は、現在、プロキシの使用方法に関する�
 
 ## <a name="see-also"></a>関連項目
 
-- [方法:Visual Studio Code を使用して共同作業します。](../use/vscode.md)
-- [方法:Visual Studio を使用して共同作業します。](../use/vs.md)
+- [方法:Visual Studio Code を使用して共同作業する](../use/vscode.md)
+- [方法:Visual Studio を使用して共同作業する](../use/vs.md)
 - [Live Share のセキュリティ機能](security.md)
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。
