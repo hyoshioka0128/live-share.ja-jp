@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d4dc3f2a6dfd8e0951a944cf4f487cedc49e4370
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b6ecafc933c6521f6c21ec0dcd38c25e889a0e2
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640147"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853574"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="common-use-cases"></a>一般的なユース ケース
 
-Visual Studio Live Share の主な目的より簡単を実行するタイミングと方法について、意見を導入することがなく、互いと共同作業する開発者を有効にする (例:「右側」のソフトウェアの方法論または SCM ワークフローを使用する通信ツール)。 これにより、ツールが行われる対話をサポートできる**自然**、として **頻繁*方法では、必要に応じてを **こちら*作業に既に使用する方法。
+Visual Studio Live Share の主な目的より簡単を実行するタイミングと方法について、意見を導入することがなく、互いと共同作業する開発者を有効にする (例:「右側」のソフトウェアの方法論または SCM ワークフローを使用する通信ツール)。 これにより、ツールが行われる対話をサポートできる**自然**、として**頻繁**方法では、必要に応じてを**こちら**作業に既に使用する方法。
 
 このドキュメントには、いくつかのユース ケースの Visual Studio Live Share は、既に使用されてし、どの程度現在サポート、および予定にさらに (に基づいてフィードバック!) を最適化する方法について説明しますが強調表示します。 以下は、既に説明されていないことを Live Share を使用しているかと思われるために強化して、特定のユース ケースをサポートするために[お知らせ](https://github.com/MicrosoftDocs/live-share/issues/new)します。
 
@@ -71,21 +71,23 @@ Visual Studio Live Share「のペア プログラミング」には一般的な�
 
 前述の懸念事項のすべてに依存しないというライブの共有されたように設計し、代わりに、完全に「便宜的」、自分の状況に低減ペア プログラミングをサポートするために努力しています。 ただし、1 つのキーボードを共有する 2 人の開発者とは異なり、され Live Share 画面で、一種のペア プログラミングにより、開発者は、個々 の自律性または環境の設定を削除せずに、共有の目標に作業をするできます。 コラボレーションにプロセスが同時に、考える許可させるには、各参加者が自分で個別に、する動作ことができますか。
 
-ペア プログラミングをサポートし、一般的に必要なアクションを実行する各"guest"さらに、コンテキストおよび Live Share セッションで共有されている機能の向上を続行するロードマップに作業がある: タスク ([#40](https://github.com/MicrosoftDocs/live-share/issues/40))、ビルド出力 ([#48](https://github.com/MicrosoftDocs/live-share/issues/48))、ゲスト主導型デバッグ ([#32](https://github.com/MicrosoftDocs/live-share/issues/32))、その他。 これらのエクスペリエンスの重要な中に通知してください。
-
 、さらに、このユース ケースを中断するには、次の項目のペア プログラミングの Live Share を使用して人々 を観察しましたしたフォームを表しています。
 
 ### <a name="mob-programming"></a>Mob プログラミング
 
 [Mob プログラミング](https://en.wikipedia.org/wiki/Mob_programming)(または、プログラミングの swarm) は本質的には、ペア プログラミングしますが、3 つ以上のユーザーとします。 そのため、Live Share のペア プログラミングの利点のすべての適用も同じようにします。 さらに、一部のチームでは、"swarming"(例: 消防訓練周囲なんチーム) に、必要に応じてごとにフルタイムではなくしないでください。
 
-現時点では、Live Share では、チームの規模に対応していない可能性がありますか、セッション内で最大 5 つのゲストをサポートしています。 ただし、これは (のさまざまなユース ケース)、引き上げられる予定し、フィードバック探しているもの ([投票👍ここ](https://github.com/MicrosoftDocs/live-share/issues/229))
+現時点では、Live Share では、セッション内で最大 30 のゲストをサポートしています。
+> [!TIP]
+> セッションで 30 のゲストを有効にします。
+> - **VS Code:** settings.json に"liveshare.increasedGuestLimit":"true"を追加します。
+> - **VS:** 設定のツール > オプション > Live Share >"True"に強化されたゲストの制限 
 
 ### <a name="coding-competitions--hack-a-thons"></a>コンペティションのコーディングの裏技-A-Thons/
 
 コーディングのコンペティションと裏技の thons a には mob プログラミングのバリエーションを効果的に短期的な単一タスクです。 チーム、およびその現在のロールのメンバーも動的可能性があります。 このユース ケースには時間を区別するは通常もあるため、まったく新しいツールと連携する機能を採用する必要があるキーボード、または 1 つの画面に制限されることがなく移動できますログ方法で増やすことがなくリアルタイムで共同作業を行う機能速度。
 
-この環境では参加者が必ずしも完全に「信頼された」、ため要求を許可という要望を削除する (およびブロック) を有効にする予定であることはいつでもセッションからのゲスト ([#398](https://github.com/MicrosoftDocs/live-share/issues/398))、サポートしています各自の環境を完全に制御を「ホスト」を提供するという目標です。
+この環境では参加者が必ずしも完全に「信頼された」ため、削除 (してブロック) いつでもセッションからのゲストできます。 これは、その環境を完全に制御を「ホスト」を提供します。
 
 ### <a name="school-group-projects"></a>学校のグループのプロジェクト
 
@@ -117,14 +119,14 @@ Mob プログラミングでは、複数の受講者が同時に、作業して�
 
 教室の設定を支援するためには、Live Share は、読み取り専用モードで共有できます。 インストラクターは、受講者と不要または偶発的な編集が行われるについて心配するのにことがなく、プロジェクトを共有できるように、読み取り専用モードを使用できます。
 
-また、Live Share では、共同作業セッションに参加する最大 30 のゲストを有効にする実験的なサポートがあります。 これにより、インストラクターの全体のクラスをセッションに参加し、コードを一緒に表示ことができます。
+さらに、Live Share コラボレーション セッションに参加する最大 30 のゲストを有効にするサポートしています。 これにより、インストラクターの全体のクラスをセッションに参加し、コードを一緒に表示ことができます。
 
-この実験的な機能を有効にします。
+この機能を有効にします。
 
-- **VS Code:** Settings.json に"liveshare.features":"experimental"を追加します。
-- **VS:** ツールの設定 > オプション > Live 共有 >「実験的」する機能
+- **VS Code:** Settings.json に"liveshare.increasedGuestLimit":"true"を追加します。
+- **VS:** 設定のツール > オプション > Live Share >"True"に強化されたゲストの制限
 
-このシナリオでは Live Share を完全に最適化するには、現在のゲストの制限をさらに向上しました必要があります ([#229](https://github.com/MicrosoftDocs/live-share/issues/229))、およびセッションを開始する方法を簡略化 ([#422](https://github.com/MicrosoftDocs/live-share/issues/422))。
+このシナリオでは Live Share を完全に最適化するには、セッションを開始する方法を簡略化する ([#422](https://github.com/MicrosoftDocs/live-share/issues/422))。
 
 ## <a name="code-reviews"></a>コード レビュー
 
@@ -148,6 +150,6 @@ Live Share を使用すると、すぐに、プロジェクトを他のユーザ
 - [Live Share の接続要件](connectivity.md)
 - [Live Share のセキュリティ機能](security.md)
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
-- [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
+- [すべての機能要求や制限事項](https://aka.ms/vsls-feature-requests)
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。

@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: a97ca693a0a60125c5376e444c9fba1ee7442d67
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640160"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853600"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,15 +27,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ## <a name="what-is-live-share"></a>Live Share とは何ですか。
-ライブの共有には、開発者は、既存のツール (Visual Studio 2017 または Visual Studio Code) から直接インスタント、双方向、コラボレーションを取得するために、コードベースとそのコンテキストを共有するができます。 ライブの共有チームメイトできます読み取り、移動、編集、およびシームレスかつ安全にそれらを共有して、プロジェクトのデバッグします。
+Live Share を使うと、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集したりデバッグしたりできます。 瞬時に (かつ安全に)、現在のプロジェクトを共有し、必要に応じて、デバッグ セッション、ターミナルのインスタンス、localhost の web アプリ、およびを共有することができます。 ユーザーは、セッションに参加する開発者を実行できる任意のリポジトリを複製するか、任意の Sdk をインストールすることがなく、すぐに生産的共同作業を開始できるように、環境 (例: 言語サービスのデバッグ) から、エディターのコンテキストのすべてを受信します。
 
 ## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>Live Share を使用するためのツールの要件とは
 [コア機能](#what-are-the-core-capabilities-of-live-share)Live Share は完全にサポートで、次のツール。
 
-* [Visual Studio 2017 (15.6 以降)](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2017 (15.6 以降)](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-プレビュー期間中には、Live Share はユーザーのフィードバックは、Visual Studio 内の機能を活用する必要がありますに応答をすばやく反復処理とのみである Visual Studio Code は、そのそれぞれプレビュー/insider のリリースで利用できます。 機能に必要な VS または VS Code のドキュメントの最新バージョンが示されます。 たとえば、ローカルの元に戻す/やり直しのサポートには、Visual Studio 2017 15.7 + が必要です。
+処理してすばやくユーザーからのフィードバックに応答します。 Visual Studio 内の機能を活用する必要があり、のみである Visual Studio Code は、そのそれぞれプレビュー/insider のリリースで利用できます。 機能に必要な VS または VS Code のドキュメントの最新バージョンが示されます。 たとえば、ローカルの元に戻す/やり直しのサポートには、Visual Studio 2017 15.7 + が必要です。
 
 ## <a name="what-are-the-core-capabilities-of-live-share"></a>Live Share のコア機能とは
 ライブの共有では、共有することができます、コードベースをセキュリティで保護された接続経由でチーム メンバーとします。 ライブの共有を使用した共同ワークスペース内の複数のファイルを編集することができると、重要なは、チーム メンバーを使用してアプリケーションをデバッグの詳細は。 共同編集内容を編集中にすぐに表示することは他のチーム メンバー。 併置デバッグ中に、アプリケーションの同じデバッグ セッションを共有しています。 つまりと他のチーム メンバーは、ブレークポイントやステップ実行を使用したプログラム実行を制御できますが、個別に検査できましていない変数、ウォッチ、ローカル、Repl (例: Visual Studio のイミディ エイト ウィンドウ)。
@@ -52,7 +53,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 ライブの共有は、すべてのキーボードとマウス入力を転送しません。 また、チーム メンバーのマシンに共同作業アクティビティごとに必要なデータのみ通信します。 たとえば、ワークスペースを共有すると、フォルダー構造が共有されます。 共同でファイルを編集する場合は、そのファイルの内容が共有されます。 共同でデバッグしている場合は、(ステップ実行など) のデバッグ操作と状態 (例: 呼び出し履歴およびローカル変数) が共有されます。
 
 ## <a name="when-will-live-share-be-released"></a>Live Share をいつリリースされますか。
-ライブの共有は、パブリック プレビューで利用できるようになりました。 フィードバックを収集し、可能であればより広い意味で、サービスを開く前に、最適なエクスペリエンスを実現できることを確認するために、プレビューのビットをテストする開発者を緊密に連携する予定です。
+ライブの共有が一般公開です。 できます[Live Share 概要](https://aka.ms/vsls-start)今日です。
 
 ## <a name="how-much-will-it-cost"></a>いくらですか。
 Visual Studio Live Share 継続的に使用する開発者向けの実質的な free レベルに取り組んでいます。 私たちを評価して高度な機能の有料レベルの導入ように、コミュニティのニーズを理解しました。
@@ -82,11 +83,15 @@ Web ベースのエディターでは、両方のチーム メンバーは同じ
 
 ライブの共有を使用して、ステップをさらには、デバッグ セッションを共有することができます。  これにより、開発ワークフローを変更することや、アプリケーションの設計を変更することなしにコンピューターにのみ発生する問題を追跡するための他のユーザーへの参加に特に便利です。
 
-## <a name="which-languages-and-platforms-will-be-supported-in-the-preview"></a>どの言語とプラットフォームは、プレビューでサポートされる予定ですか。
-ただし、この目的は、多様な言語とプラットフォーム、開発中、アプリケーションの種類に関係なく、機能豊富なコラボレーションを有効にできることを確認する規制をサポートするためには。 参照してください、[言語とプラットフォームのサポート](reference/platform-support.md)に関する記事の詳細について今すぐ動作をします。 これは、開始だけであり、この画像移動からのフィードバックに基づいて、転送が改善される予定です。
+## <a name="which-languages-and-platforms-will-be-supported"></a>どの言語とプラットフォームがサポートされますか。
+目標は、多様な言語とプラットフォーム、開発中、アプリケーションの種類に関係なく、機能豊富なコラボレーションを有効にできることを確認する規制をサポートするためにです。 参照してください、[言語とプラットフォームのサポート](reference/platform-support.md)に関する記事の詳細について今すぐ動作をします。
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>開発者の数は、コラボレーション セッションに参加できますか。
-現在サポートされています (「ホスト」) を共有している開発者だけでなく、5 つの同時実行のゲストのプロジェクト。 そのため、共同作業セッションは特定の時点で開発者が 6 人の合計ができます。 ただし、これは、領域、フィードバックを検索しているため、上限の拡大が必要なユース ケースがある場合ください[お知らせ](https://github.com/MicrosoftDocs/live-share/issues/229)!
+現在サポートされています (「ホスト」) を共有している開発者だけでなく、30 の同時実行のゲストのプロジェクト。 既定では、最大 5 つのゲストを有効に、セッションでします。 
+
+ゲストの増加の制限を有効にします。 
+- **VS Code:** Settings.json に"liveshare.increasedGuestLimit":"true"を追加します。
+- **VS:** 設定のツール > オプション > Live Share >"True"に強化されたゲストの制限
 
 ## <a name="what-is-the-roadmap"></a>ロードマップとは何ですか。
 既知の問題、およびロードマップ項目のセットを表示する[ここ](https://aka.ms/vsls-issues)します。 すべての問題ではなく、機能の要求のみを参照する場合を参照してください。[ここ](https://aka.ms/vsls-feature-requests)します。 勧めを既存の項目を投票、ファイルの新しい機能の要求、およびバグの報告、協力するためにログに記録する図形、製品の今後の方向。
@@ -97,6 +102,6 @@ Web ベースのエディターでは、両方のチーム メンバーは同じ
 - [Live Share の接続要件](reference/connectivity.md)
 - [Live Share のセキュリティ機能](reference/security.md)
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
-- [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
+- [すべての機能要求や制限事項](https://aka.ms/vsls-feature-requests)
 
 問題が発生していますか? [トラブルシューティング](troubleshooting.md)または[フィードバックの送信](support.md)に関するページをご覧ください。
