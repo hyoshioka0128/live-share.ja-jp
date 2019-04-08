@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/27/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: conceptual
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9285fef38fea9bb164892775521ed2a28fe9ef1b
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255963"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853639"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,7 +30,7 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 
 ここで説明するすべてのコラボレーション アクティビティは、1 人の**コラボレーション セッション ホスト**と 1 人以上の**ゲスト**を伴うことに注意してください。 ホストはコラボレーション セッションを開始した人であり、参加する人はすべてゲストです。
 
-"*短い要約をお探しですか。代わりに、[共有](../quickstart/share.md)または[参加](../quickstart/join.md)のクイック スタートをご覧ください。*"
+*短い概要をお探しですか。 代わりに、[共有](../quickstart/share.md)または[参加](../quickstart/join.md)のクイック スタートをご覧ください。*
 
 > [!TIP]
 > "*独自のコラボレーション セッションに参加*" できることをご存知でしたか。 これを使うと、Live Share を独自に試したり、Visual Studio または VS Code のインスタンスを起動してリモートでそれに接続したりできます。 両方のインスタンスで同じ ID を使用することもできます。 ぜひお試しください。
@@ -44,12 +42,12 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 - **Windows**:7、8.1、または 10
 
 - **macOS**:Sierra (10.12) 以降のみ。
-    - "_[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872315)があるため、El Capitan (10.11) 以前は現在サポートされていません。_"
+    - _[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872315)があるため、El Capitan (10.11) 以下は現在サポートされていません。_
 
 - **Linux**:64 ビット版 Ubuntu Desktop 16.04 以降、Fedora Workstation 27 以降、CentOS 7
 
     - Live Share には複数の [Linux の前提条件](#linux-install-steps)があり、インストールを求められる場合があります。
-    - "_[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872314)があるため、32 ビット版 Linux はサポートされません。_"
+    - _[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872314)があるため、32 ビット版 Linux はサポートされません。_
     - また、ARM も現在サポートされていません。
     - ダウンストリームおよび他のディストリビューションの使用の詳細については、「[Linux のインストールの詳細](../reference/linux.md)」の記事を参照してください。
 
@@ -67,7 +65,7 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 
 Visual Studio Live Share をダウンロードして使用すると、[ライセンス条項](https://aka.ms/vsls-license)と[プライバシーに関する声明](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx)に同意したものと見なされます。 問題が発生した場合は、[トラブルシューティング](../troubleshooting.md)に関するページをご覧ください。
 
-[![ダウンロード](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Download](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Linux のインストール手順
 
@@ -99,7 +97,7 @@ Linux のディストリビューションによっては、Live Share が機能
 
 共同作業するには、他のすべてのユーザーに認識されるように、Visual Studio Live Share にサインインする必要があります。 これは純粋にセキュリティ対策であり、マーケティングや他の研究活動に参加することは**ありません**。 Microsoft の個人アカウント (例: @outlook.com)、Microsoft の職場または学校アカウント (AAD)、または GitHub アカウントを使用してサインインすることができます。 サインインは簡単です。
 
-[共有] ステータス バーの項目を**クリック**するか、**Ctrl + Shift + P/Cmd + Shift + P キー**を押して、[Live Share:Sign In With Browser]\(Live Share: ブラウザーでサインイン\) コマンドを選択します。
+[Live Share] ステータス バーの項目を**クリック**するか、**Ctrl + Shift + P/Cmd + Shift + P キー**を押して、[Live Share:Sign In With Browser]\(Live Share: ブラウザーでサインイン\) コマンドを選択します。
 
 ![VS Code のサインイン ボタン](../media/vscode-sign-in-button.png)
 
@@ -174,7 +172,7 @@ Visual Studio Live Share をダウンロードしてインストールしたら�
 
 4. **コラボレーション セッションを開始する**
 
-    次に、[共有] ステータス バーの項目を**クリック**するか、**Ctrl + Shift + P/Cmd + Shift + P キー**を押して、[Live Share:Start a collaboration session (Share)]\(Live Share: コラボレーション セッションの開始 (共有)\) を選択します。
+    次に、単に [Live Share] ステータス バーの項目を**クリック**するか、**Ctrl + Shift + P/Cmd + Shift + P キー**を押して、[Live Share:Start a collaboration session (Share)]\(Live Share: コラボレーション セッションの開始 (共有)\) を選択します。
 
     ![[共有] ボタン](../media/vscode-share-button.png)
 
@@ -183,7 +181,7 @@ Visual Studio Live Share をダウンロードしてインストールしたら�
 
     招待リンクは、自動的にクリップボードにコピーされます。 ブラウザーで開くと、このリンクにより、他のユーザーは、これらのフォルダーの内容を共有する新しいコラボレーション セッションに参加することができます。
 
-    また、セッション状態を反映して、[共有] ステータス バー項目も変化します。 この表示については、後述する「[セッション状態](#session-states)」を参照してください。
+    また、セッション状態を反映して、[Live Share] ステータス バー項目も変化します。 この表示については、後述する「[セッション状態](#session-states)」を参照してください。
 
     共有を開始した後でもう一度招待のリンクを取得する必要がある場合は、セッション状態ステータス バー アイコンをクリックしてもう一度アクセスし、[Invite Others (Copy Link)]\(他のユーザーを招待 (リンクのコピー)\) を選択します。
 
@@ -258,11 +256,11 @@ Visual Studio Live Share をダウンロードしてインストールした後�
     > [!NOTE]
     > Visual Studio Live Share 拡張機能のインストール後に**少なくとも 1 度はツールを起動した**こと、および招待ページを開く/再度開く前にインストールの完了を許可したことを確認してください。 まだ問題が解決していませんか? 「[手動で参加する](#join-manually)」を参照してください。
 
-3. **共同作業をする**
+3. **共同作業**
 
     これで完了です。 しばらくすると、接続されて共同作業を開始できます。
 
-    [共有] ボタンは "セッション状態" を伝達するように変化します。 この表示については、後述する「[セッション状態](#session-states)」を参照してください。
+    "セッション状態" を伝達するように "Live Share" ボタンが変化するのを確認できます。 この表示については、後述する「[セッション状態](#session-states)」を参照してください。
 
     参加が完了すると、ホストが現在編集しているファイルに自動的に移動します。
 
@@ -288,7 +286,7 @@ Web ブラウザーを使用しないで手動で参加することもできま�
 
     これで完了です。 すぐにコラボレーション セッションに接続されるはずです。
 
-    [共有] ボタンは "セッション状態" を伝達するように変化します。 この表示については、後述する「[セッション状態](#session-states)」を参照してください。
+    "セッション状態" を伝達するように "Live Share" ボタンが変化するのを確認できます。 この表示については、後述する「[セッション状態](#session-states)」を参照してください。
 
     参加が完了すると、ホストが現在編集しているファイルに自動的に移動します。
 
@@ -398,11 +396,11 @@ VS Code アクティビティ バーまたは Live Share Explorer ビューの L
 
 ## <a name="co-debugging"></a>共同デバッグ
 
-Visual Studio Live Share の共同デバッグ機能は、問題をデバッグするための強力で独自の方法です。 コラボレーション エクスペリエンスを有効にして問題をトラブルシューティングする以外に、参加者はホストのマシンで共有デバッグ セッションを提供することで、環境固有の可能性がある問題を調査できます。
+Visual Studio Live Share の共同デバッグ機能は、問題をデバッグするための強力で独自の方法です。 コラボレーション エクスペリエンスを有効にして問題をトラブルシューティングする以外に、自分とセッションの他の参加者は、ホストのマシンで共有デバッグ セッションを提供することで、環境固有の可能性がある問題を調査できます。
 
 > **セキュリティのヒント:** すべての参加者が個別にファイルに移動して編集できるようにした場合、ホストは .vsls.json ファイルを使用してゲストがプロジェクト内でアクセスできるファイルを制限できます。 また、コンソール/REPL アクセスは、参加者がホストのコンピューターでコマンドを実行できることを意味するので、信頼できるユーザーとのみ共同デバッグする必要があります。 ゲストとしては、これらの設定の結果として、デバッガーが特定のファイル制限付きのファイルにステップインするとフォローできないことにも注意が必要です。 詳細については、[ファイルのアクセスと可視性を制御する](../reference/security.md#controlling-file-access-and-visibility)のセクションを参照してください。
 
-簡単に使用できます。
+これは簡単に使用できます。
 
 1. ホストとすべてのゲストの両方に適切なデバッグ拡張機能がインストールされていることを確認します。 (これは技術的には必ずしも必要ではありませんが、一般的には推奨されます。)
 
@@ -546,8 +544,8 @@ Visual Studio Code には、ASP.NET などのプロジェクトの種類に対�
 
 詳細については、次の記事をご確認ください。
 
-- [クイック スタート:最初のプロジェクトを共有する](../quickstart/share.md)
-- [クイック スタート:最初のセッションに参加する](../quickstart/share.md)
+- [クイック スタート: 最初のプロジェクトを共有する](../quickstart/share.md)
+- [クイック スタート: 最初のセッションに参加する](../quickstart/share.md)
 - [方法:Visual Studio を使用して共同作業する](vs.md)
 - [Live Share の接続要件](../reference/connectivity.md)
 - [Live Share のセキュリティ機能](../reference/security.md)

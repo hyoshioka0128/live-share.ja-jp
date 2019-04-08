@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: quickstart
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d4280484aaa3fd4ac204588bf4aefc4e3ac51871
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: c5c86b158facfe1fe8fa7f5ae14a9511c55e0877
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256067"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853548"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,8 +25,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 -->
 
 # <a name="quickstart-join-your-first-collaboration-session"></a>クイック スタート: コラボレーション セッションに初めて参加する
-
-> **注:現在、Visual Studio Live Share はプレビュー段階です。ユーザー エクスペリエンスと機能は最終版ではありません。**
 
 Visual Studio Live Share へようこそ。 Live Share を使うと、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集したりデバッグしたりできます。 これにより、チームメートの現在のプロジェクトに瞬時に安全に参加した後、必要に応じて、デバッグ セッションへの参加、ターミナル インスタンスの表示および編集、localhost の Web アプリの表示、音声通話への参加などができます。
 
@@ -56,22 +52,22 @@ Visual Studio Live Share へようこそ。 Live Share を使うと、使って�
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
-    <td style="border:none;">
-        <strong>Visual Studio 2017 15.6 以上</strong><br />
-        1. 最新バージョンの <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6+) を Windows (7、8.1、または 10) にインストールします。<br/>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a> をインストールします。<br/>
         2. <a href="../reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
-        3. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
-        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button"></a><br />
+        3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。 <br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019 </strong><br />
-        1. 最新のプレビュー バージョンの <a href="https://aka.ms/vs-preview">Visual Studio 2019</a> をインストールします。<br/>
+        <strong>Visual Studio 2017 15.6 以上</strong><br />
+        1. 最新バージョンの <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) を Windows (7、8.1、または 10) にインストールします。<br/>
         2. <a href="../reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
-        3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。 <br />
+        3. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
 </table>
@@ -83,7 +79,7 @@ Visual Studio Live Share をダウンロードして使用すると、[ライセ
 VS Code で、Live Share の拡張機能をインストールし、再起動し、依存関係を待機してインストールを完了すると、読み取り専用ゲストとしてコラボレーション セッションにすぐに参加できます。
 
 > [!NOTE]
-> 参加しているコードを編集する場合は、[サインイン](../quickstart/join.md#3-Sign-in)する必要があります。
+> 参加しているコードを編集する場合は、サインインする必要があります。
 
 ブラウザーで招待リンクを開くと (または再び開くと)、ブラウザーで VS Code を起動するかどうかをたずねる通知が表示されます。 起動を許可すると、コラボレーション セッションへの接続が開始されます。
 
@@ -136,7 +132,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 
 ![参加ページ](../media/join-page.png)
 
-ホストがオフラインの場合は、この時点で通知されます。 ホストに連絡して、もう一度共有するように依頼できます。
+ホストがオフラインの場合は、代わりにこの時点で通知されます。 ホストに連絡して、もう一度共有するように依頼できます。
 
 > **トラブルシューティングのヒント:** VS Code を使用する場合は、拡張機能をインストールして、依存関係を待機してインストールが完了 (ステータス バーで確認) した後に、**ツールを少なくとも 1 回起動**したことを確認してから、招待ページを開きます (またはもう一度開きます)。 まだ問題がありますか? 詳細については、[手動での参加](../reference/manual-join.md)に関するページを参照してください。
 
@@ -144,7 +140,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 
 これで完了です。 数分後には、同僚のコラボレーション セッションに接続されます。 既定では、ホストは参加する人を自動的に受け入れますが、ホストに [[Require guest approval]\(ゲストの承認が必要\)](../reference/security.md#requiring-guest-approval) が設定されている場合は、ステータス バーまたは参加ダイアログに、Live Share が参加要求に対するホストの承認を待機していることが示されます。
 
-> **セキュリティのヒント:** コラボレーション セッションに参加するゲストとして、ホストが特定のファイルや機能に対してアクセスを制限する場合があることを理解しておく必要があります。 Live Share の一部の機能と設定のセキュリティの影響について理解したい場合は、 [セキュリティ](../reference/security.md)記事を参照してください。
+> **セキュリティのヒント:** コラボレーション セッションに参加するゲストとして、ホストが特定のファイルや機能に対してアクセスを制限する場合があることを理解しておく必要があります。 Live Share の一部の機能と設定のセキュリティの影響について理解したいですか。 [セキュリティ](../reference/security.md)記事を参照してください。
 
 試してみることをいくつか次に示します。
 
@@ -160,9 +156,9 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 
 ## <a name="next-steps"></a>次の手順
 
-詳細についてはこれらの記事を確認してください。
+詳細については、次の記事をご確認ください。
 
-- [クイック スタート:最初のプロジェクトを共有する](share.md)
+- [クイック スタート: 最初のプロジェクトを共有する](share.md)
 - [方法:Visual Studio Code を使用して共同作業する](../use/vscode.md)
 - [方法:Visual Studio を使用して共同作業する](../use/vs.md)
 
