@@ -1,7 +1,7 @@
 ---
 title: 概要 - Visual Studio Live Share | Microsoft Docs
 description: Visual Studio Live Share とその機能の概要です。
-ms.custom: null
+ms.custom: ''
 ms.date: 04/26/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -10,9 +10,14 @@ author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
-  - liveshare
+- liveshare
+ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853587"
 ---
-
 <!--
 Copyright © Microsoft Corporation
 All rights reserved.
@@ -20,8 +25,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 -->
 
 # <a name="what-is-visual-studio-live-share"></a>Visual Studio Live Share とは
-
-> **注:現在、Visual Studio Live Share はプレビュー段階です。ユーザー エクスペリエンスと機能は最終版ではありません。**
 
 Visual Studio Live Share へようこそ。 Live Share を使うと、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集したりデバッグしたりできます。 これにより、現在のプロジェクトを瞬時に安全に共有してから、必要に応じて、デバッグ セッション、ターミナルのインスタンス、localhost の Web アプリ、音声通話などを共有することができます。
 
@@ -37,8 +40,8 @@ Visual Studio Live Share へようこそ。 Live Share を使うと、使って�
 開始する前に、Live Share のコア要件を満たす Visual Studio または Visual Studio Code のバージョンがインストールされていることを確認する必要があります。
 
 - **Visual Studio Code 1.22.0 以上** - Windows 7、8.1、または 10、macOS "*(Sierra 10.12 以上のみ)*"、64 ビット Linux "*(64 ビット Ubuntu Desktop 16.04 以上、Fedora 27 以上が推奨されます - [詳細情報](use/vscode.md#installation))*"。
-- **Visual Studio 2017 15.6 以上** (任意のエディション) - Windows 7、8.1、または 10。
 - **Visual Studio 2019** (任意のエディション) - Windows 7、8.1、または 10。
+- **Visual Studio 2017 15.6 以上** (任意のエディション) - Windows 7、8.1、または 10。
 
 その後は、Visual Studio Live Share 拡張機能を簡単にダウンロードしてインストールできます。
 
@@ -55,22 +58,22 @@ Visual Studio Live Share へようこそ。 Live Share を使うと、使って�
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2017 15.6 以上</strong><br />
-        1. 最新バージョンの <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6+) を Windows (7、8.1、または 10) にインストールします。<br/>
+        <strong>Visual Studio 2019 </strong><br />
+        1. <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a> をインストールします。<br/>
         2. <a href="reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
-        3. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
-        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
+        3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。 <br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019 </strong><br />
-        1. 最新のプレビュー バージョンの <a href="https://aka.ms/vs-preview">Visual Studio 2019</a> をインストールします。<br/>
+        <strong>Visual Studio 2017 15.6 以上</strong><br />
+        1. 最新バージョンの <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) を Windows (7、8.1、または 10) にインストールします。<br/>
         2. <a href="reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
-        3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。 <br />
+        3. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
 </table>
@@ -165,7 +168,7 @@ Visual Studio Live Share では、共同作業のための優れた方法が参�
 
 関連項目
 
-- [Live Share の接続要件](reference/connectivity.md)
+- [Live Share の接続性要件](reference/connectivity.md)
 - [Live Share のセキュリティ機能](reference/security.md)
 - [言語とプラットフォームのサポート](reference/platform-support.md)
 - [拡張機能のサポート](reference/extensions.md)

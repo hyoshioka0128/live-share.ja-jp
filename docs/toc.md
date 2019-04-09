@@ -33,9 +33,10 @@
 ## [拡張機能のサポート](reference/extensions.md)
 ## [一般的なユース ケース](reference/use-cases.md)
 ## [Linux インストールの詳細](reference/linux.md)
+## [インサイダー](reference/insiders.md)
 ## [リリース ノート](https://aka.ms/vsls-releases)
 # リソース
 ## [トラブルシューティング](troubleshooting.md)
-## [フィードバックを送信する](support.md)
-## [FAQ](faq.md)
+## [フィードバックの提供](support.md)
+## [よくあるご質問](faq.md)
 ## [ユーザー プロファイル](user-profile.md)
