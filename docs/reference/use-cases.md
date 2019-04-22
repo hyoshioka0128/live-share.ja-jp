@@ -15,7 +15,7 @@ ms.openlocfilehash: 1b6ecafc933c6521f6c21ec0dcd38c25e889a0e2
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853574"
 ---
 <!--
@@ -150,6 +150,6 @@ Live Share を使用すると、すぐに、プロジェクトを他のユーザ
 - [Live Share の接続要件](connectivity.md)
 - [Live Share のセキュリティ機能](security.md)
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
-- [すべての機能要求や制限事項](https://aka.ms/vsls-feature-requests)
+- [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。

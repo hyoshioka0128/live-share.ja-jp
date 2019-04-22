@@ -15,7 +15,7 @@ ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853600"
 ---
 <!--
@@ -102,6 +102,6 @@ Web ベースのエディターでは、両方のチーム メンバーは同じ
 - [Live Share の接続要件](reference/connectivity.md)
 - [Live Share のセキュリティ機能](reference/security.md)
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
-- [すべての機能要求や制限事項](https://aka.ms/vsls-feature-requests)
+- [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
 
 問題が発生していますか? [トラブルシューティング](troubleshooting.md)または[フィードバックの送信](support.md)に関するページをご覧ください。

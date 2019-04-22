@@ -37,6 +37,6 @@
 ## [リリース ノート](https://aka.ms/vsls-releases)
 # リソース
 ## [トラブルシューティング](troubleshooting.md)
-## [フィードバックの提供](support.md)
-## [よくあるご質問](faq.md)
+## [フィードバックを送信する](support.md)
+## [FAQ](faq.md)
 ## [ユーザー プロファイル](user-profile.md)
