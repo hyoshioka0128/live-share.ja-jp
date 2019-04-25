@@ -15,7 +15,7 @@ ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853639"
 ---
 <!--
@@ -30,7 +30,7 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 
 ここで説明するすべてのコラボレーション アクティビティは、1 人の**コラボレーション セッション ホスト**と 1 人以上の**ゲスト**を伴うことに注意してください。 ホストはコラボレーション セッションを開始した人であり、参加する人はすべてゲストです。
 
-*短い概要をお探しですか。 代わりに、[共有](../quickstart/share.md)または[参加](../quickstart/join.md)のクイック スタートをご覧ください。*
+"*短い要約をお探しですか。代わりに、[共有](../quickstart/share.md)または[参加](../quickstart/join.md)のクイック スタートをご覧ください。*"
 
 > [!TIP]
 > "*独自のコラボレーション セッションに参加*" できることをご存知でしたか。 これを使うと、Live Share を独自に試したり、Visual Studio または VS Code のインスタンスを起動してリモートでそれに接続したりできます。 両方のインスタンスで同じ ID を使用することもできます。 ぜひお試しください。
@@ -42,12 +42,12 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 - **Windows**:7、8.1、または 10
 
 - **macOS**:Sierra (10.12) 以降のみ。
-    - _[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872315)があるため、El Capitan (10.11) 以下は現在サポートされていません。_
+    - "_[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872315)があるため、El Capitan (10.11) 以前は現在サポートされていません。_"
 
 - **Linux**:64 ビット版 Ubuntu Desktop 16.04 以降、Fedora Workstation 27 以降、CentOS 7
 
     - Live Share には複数の [Linux の前提条件](#linux-install-steps)があり、インストールを求められる場合があります。
-    - _[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872314)があるため、32 ビット版 Linux はサポートされません。_
+    - "_[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872314)があるため、32 ビット版 Linux はサポートされません。_"
     - また、ARM も現在サポートされていません。
     - ダウンストリームおよび他のディストリビューションの使用の詳細については、「[Linux のインストールの詳細](../reference/linux.md)」の記事を参照してください。
 
@@ -65,7 +65,7 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 
 Visual Studio Live Share をダウンロードして使用すると、[ライセンス条項](https://aka.ms/vsls-license)と[プライバシーに関する声明](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx)に同意したものと見なされます。 問題が発生した場合は、[トラブルシューティング](../troubleshooting.md)に関するページをご覧ください。
 
-[![Download](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![ダウンロード](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Linux のインストール手順
 
@@ -256,7 +256,7 @@ Visual Studio Live Share をダウンロードしてインストールした後�
     > [!NOTE]
     > Visual Studio Live Share 拡張機能のインストール後に**少なくとも 1 度はツールを起動した**こと、および招待ページを開く/再度開く前にインストールの完了を許可したことを確認してください。 まだ問題が解決していませんか? 「[手動で参加する](#join-manually)」を参照してください。
 
-3. **共同作業**
+3. **共同作業をする**
 
     これで完了です。 しばらくすると、接続されて共同作業を開始できます。
 
@@ -544,8 +544,8 @@ Visual Studio Code には、ASP.NET などのプロジェクトの種類に対�
 
 詳細については、次の記事をご確認ください。
 
-- [クイック スタート: 最初のプロジェクトを共有する](../quickstart/share.md)
-- [クイック スタート: 最初のセッションに参加する](../quickstart/share.md)
+- [クイック スタート:最初のプロジェクトを共有する](../quickstart/share.md)
+- [クイック スタート:最初のセッションに参加する](../quickstart/share.md)
 - [方法:Visual Studio を使用して共同作業する](vs.md)
 - [Live Share の接続要件](../reference/connectivity.md)
 - [Live Share のセキュリティ機能](../reference/security.md)

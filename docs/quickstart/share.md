@@ -15,7 +15,7 @@ ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853613"
 ---
 <!--
@@ -55,7 +55,7 @@ Visual Studio Live Share へようこそ。 Live Share を使うと、使って�
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
-        1. <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a> をインストールします。<br/>
+        1.<a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a> をインストールします。<br/>
         2. <a href="../reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
         3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。 <br />
     </td>
@@ -123,7 +123,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 </table>
 
 > [!NOTE]
-> 初めて共有するときに、Live Share エージェントがポートを開くのを許可するように、デスクトップのファイアウォール ソフトウェアから求められる場合があります。 これを受け入れるかどうかは任意ですが、共同作業する人が同じネットワーク上にいるときには、セキュリティで保護された "ダイレクト モード" を有効にしてパフォーマンスを向上させます。 詳細については、[接続モードを変更する](../reference/connectivity.md#changing-the-connection-mode)のセクションを参照してください。
+> 初めてを共有するときに、Live Share エージェントがポートを開くのを許可するように、デスクトップのファイアウォール ソフトウェアから求められる場合があります。 これを受け入れるかどうかは任意ですが、共同作業する人が同じネットワーク上にいるときには、セキュリティで保護された "ダイレクト モード" を有効にしてパフォーマンスを向上させます。 詳細については、[接続モードを変更する](../reference/connectivity.md#changing-the-connection-mode)のセクションを参照してください。
 
 ## <a name="6-optional-enable-read-only-mode"></a>6. [省略可能] 読み取り専用モードを有効にする
 
@@ -191,7 +191,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 
 詳細については、次の記事をご確認ください。
 
-- [クイック スタート: コラボレーション セッションに初めて参加する](join.md)
+- [クイック スタート:コラボレーション セッションに初めて参加する](join.md)
 - [方法:Visual Studio Code を使用して共同作業する](../use/vscode.md)
 - [方法:Visual Studio を使用して共同作業する](../use/vs.md)
 
