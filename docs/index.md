@@ -2,7 +2,7 @@
 title: 概要 - Visual Studio Live Share | Microsoft Docs
 description: Visual Studio Live Share とその機能の概要です。
 ms.custom: ''
-ms.date: 04/26/2018
+ms.date: 05/01/2019
 ms.reviewer: ''
 ms.suite: ''
 ms.topic: overview
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 6097d94b83f3c2370c87f1d27ba9fd51f24c9896
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853587"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987174"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -62,7 +62,7 @@ Visual Studio Live Share へようこそ。 Live Share を使うと、使って�
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1.<a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a> をインストールします。<br/>
-        2. <a href="reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
+        2. <a href="reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Python、Node.js)<br />
         3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。 <br />
     </td>
 </tr>
