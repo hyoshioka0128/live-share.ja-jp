@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 55eb4b0a5e819b00754d75e4682dd1aa97bbf576
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 657b5079ba5669b6d01d732257b40444a8fa82d2
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853626"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987192"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -43,7 +43,7 @@ Visual Studio で Live Share を使用して共同作業する準備はできて
 
 Visual Studio 2019 の場合
 1. 任意のエディションの [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) をインストールします。
-2. [サポートされているワークロード](../reference/platform-support.md)をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)
+2. [サポートされているワークロード](../reference/platform-support.md)をインストールします。 (例: ASP.NET、.NET Core、C++、Python、Node.js)
 3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。
 
 Visual Studio 2017 の場合
