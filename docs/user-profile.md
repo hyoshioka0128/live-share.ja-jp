@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 38fb6fada1030bddac8f3437f19f0ae259f5626e
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1d3b4977745e33ba0ee1b599ea4257c4a49d970d
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640030"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224702"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,8 +28,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Visual Studio Live Share を認証する場合、ユーザー プロファイルが作成、参加者がユーザーを表示すると共同作業できる (電子メール アドレス、アバターなど)。 任意の時点では、(id プロバイダーを使用した) に応じて、次のページのいずれかに移動して、お客様に代わって Live Share が格納されているプロファイル情報を表示できます。
 
-- [Microsoft アカウントまたは Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
+- [Microsoft アカウントまたは Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
 
 ページは、お客様の本人確認にサインインするように求めし、ユーザー プロファイルの未加工の JSON 出力を表示します。
 
@@ -43,8 +43,8 @@ Visual Studio Live Share 現在格納されているログインで使用する 
 
 ユーザー プロファイルを削除する場合は、というリンクをクリックすることができます`Click here to get your data removed from our systems`上、[ユーザー プロファイル ページ](#user-profile)します。 直接 (id プロバイダーを使用した) に応じて、次のページのいずれかをアクセスすることができます。
 
-- [Microsoft アカウントまたは Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
+- [Microsoft アカウントまたは Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
 
 それ以外の場合、Visual Studio Live Share は自動的に削除、プロファイルの 30 日後、最後に正常にサインインします。 このコンテキストで、「成功したサインイン」(使用しているツール) に応じて、次を参照します。
 

@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 91ffc42c06e70839dbadbd2487cd02970ded3346
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853600"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224710"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -87,11 +87,7 @@ Web ベースのエディターでは、両方のチーム メンバーは同じ
 目標は、多様な言語とプラットフォーム、開発中、アプリケーションの種類に関係なく、機能豊富なコラボレーションを有効にできることを確認する規制をサポートするためにです。 参照してください、[言語とプラットフォームのサポート](reference/platform-support.md)に関する記事の詳細について今すぐ動作をします。
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>開発者の数は、コラボレーション セッションに参加できますか。
-現在サポートされています (「ホスト」) を共有している開発者だけでなく、30 の同時実行のゲストのプロジェクト。 既定では、最大 5 つのゲストを有効に、セッションでします。 
-
-ゲストの増加の制限を有効にします。 
-- **VS Code:** Settings.json に"liveshare.increasedGuestLimit":"true"を追加します。
-- **VS:** 設定のツール > オプション > Live Share >"True"に強化されたゲストの制限
+現在サポートされています (「ホスト」) を共有している開発者だけでなく、30 の同時実行のゲストのプロジェクト。 
 
 ## <a name="what-is-the-roadmap"></a>ロードマップとは何ですか。
 既知の問題、およびロードマップ項目のセットを表示する[ここ](https://aka.ms/vsls-issues)します。 すべての問題ではなく、機能の要求のみを参照する場合を参照してください。[ここ](https://aka.ms/vsls-feature-requests)します。 勧めを既存の項目を投票、ファイルの新しい機能の要求、およびバグの報告、協力するためにログに記録する図形、製品の今後の方向。
