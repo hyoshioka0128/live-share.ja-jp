@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853639"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224718"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -30,7 +30,7 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 
 ここで説明するすべてのコラボレーション アクティビティは、1 人の**コラボレーション セッション ホスト**と 1 人以上の**ゲスト**を伴うことに注意してください。 ホストはコラボレーション セッションを開始した人であり、参加する人はすべてゲストです。
 
-"*短い要約をお探しですか。代わりに、[共有](../quickstart/share.md)または[参加](../quickstart/join.md)のクイック スタートをご覧ください。*"
+"*短い要約をお探しですか。代わりに、[共有](../quickstart/share.md)または[参加](../quickstart/join.md)のクイック スタートをご覧ください。* "
 
 > [!TIP]
 > "*独自のコラボレーション セッションに参加*" できることをご存知でしたか。 これを使うと、Live Share を独自に試したり、Visual Studio または VS Code のインスタンスを起動してリモートでそれに接続したりできます。 両方のインスタンスで同じ ID を使用することもできます。 ぜひお試しください。
@@ -42,12 +42,12 @@ VS Code で Live Share を使用して共同作業する準備はできていま
 - **Windows**:7、8.1、または 10
 
 - **macOS**:Sierra (10.12) 以降のみ。
-    - "_[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872315)があるため、El Capitan (10.11) 以前は現在サポートされていません。_"
+    - " _[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872315)があるため、El Capitan (10.11) 以前は現在サポートされていません。_ "
 
 - **Linux**:64 ビット版 Ubuntu Desktop 16.04 以降、Fedora Workstation 27 以降、CentOS 7
 
     - Live Share には複数の [Linux の前提条件](#linux-install-steps)があり、インストールを求められる場合があります。
-    - "_[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872314)があるため、32 ビット版 Linux はサポートされません。_"
+    - " _[.NET Core 2.0 の要件](https://go.microsoft.com/fwlink/?linkid=872314)があるため、32 ビット版 Linux はサポートされません。_ "
     - また、ARM も現在サポートされていません。
     - ダウンストリームおよび他のディストリビューションの使用の詳細については、「[Linux のインストールの詳細](../reference/linux.md)」の記事を参照してください。
 
@@ -77,9 +77,9 @@ Linux のディストリビューションによっては、Live Share が機能
 
 ![Linux の前提条件が不足しているというメッセージが表示されるトースト通知](../media/vscode-linux-prereq-missing.png)
 
-[インストール] をクリックすると、ターミナル ウィンドウが表示されます。続行するには、ここで管理者 (sudo) パスワードを入力する必要があります。 正常に完了したら、Visual Studio Code を再起動します。これで準備は完了です。 他のヒントや回避策については、**[ディストリビューション別のヒント](../reference/linux.md#tips-by-distribution)** を確認することもお勧めします。
+[インストール] をクリックすると、ターミナル ウィンドウが表示されます。続行するには、ここで管理者 (sudo) パスワードを入力する必要があります。 正常に完了したら、Visual Studio Code を再起動します。これで準備は完了です。 他のヒントや回避策については、 **[ディストリビューション別のヒント](../reference/linux.md#tips-by-distribution)** を確認することもお勧めします。
 
-スクリプトがディストリビューションをサポートしていないことを示すメッセージが表示される場合は、**[コミュニティがサポートするディストリビューションのヒント](../reference/linux.md#tips-for-community-supported-distros)** を参照してください。コミュニティが Microsoft と共有している情報が見つかります。
+スクリプトがディストリビューションをサポートしていないことを示すメッセージが表示される場合は、 **[コミュニティがサポートするディストリビューションのヒント](../reference/linux.md#tips-for-community-supported-distros)** を参照してください。コミュニティが Microsoft と共有している情報が見つかります。
 
 **VS Code でこのコマンドを自動的に実行しない**場合は、いつでもターミナル ウィンドウから次のコマンドを実行して、このスクリプトの最新バージョンを手動で再実行することもできます。
 
@@ -91,7 +91,7 @@ Linux のディストリビューションによっては、Live Share が機能
 
 一般的ではありませんが、一部のディストリビューションでは、インストール プロセスを完了するには**管理者 (sudo) パスワードが必要と通知されることがあります**。 ブラウザー ランチャーのインストール先を示すターミナル ウィンドウが表示されます。 入力を求められたらパスワードを入力し、インストールが完了したら Enter キーを押してターミナル ウィンドウを閉じます。
 
-これが必要な理由と Live Share がファイルを配置する場所の詳細については、**[こちら](../reference/linux.md#linux-browser-integration)** を参照してください。 ブラウザーの統合が機能しない場合でも、**[コラボレーション セッションには手動でも参加できます](../use/vscode.md#join-manually)**。
+これが必要な理由と Live Share がファイルを配置する場所の詳細については、 **[こちら](../reference/linux.md#linux-browser-integration)** を参照してください。 ブラウザーの統合が機能しない場合でも、 **[コラボレーション セッションには手動でも参加できます](../use/vscode.md#join-manually)** 。
 
 ## <a name="sign-in"></a>サインイン
 
@@ -106,6 +106,12 @@ Web ブラウザーを使用してサインインを求める通知が表示さ�
 ![Web ブラウザーを使用してサインインを求めるトースト通知](../media/vscode-sign-in-toast.png)
 
 > **Linux ユーザー:** Live Share の古いバージョン (v0.3.295 以前) を使用している場合は、ユーザー コードの入力を求められる場合があります。 最新バージョンの拡張機能に更新するか、サインイン後に [問題が発生した場合] の リンクをクリックしてコードを表示します。 [詳細については、以下](#sign-in-using-a-user-code)を参照してください。
+
+#
+
+> **高度なヒント:** `liveshare.account` と `liveshare.accountProvider` の設定によって、利用できる複数のアカウントの資格情報をキャッシュする場合、自動的にサインインするために使用する必要があるアカウントを選択できます。 
+
+> たとえば、異なる ID でサインインする必要がある 2 つのプロジェクトで作業するとします。 ご利用の VSCode ワークスペースの設定では、各プロジェクト ディレクトリの異なるメール アドレスに対して `liveshare.account` 設定を設定し、それぞれが確実に正しいアカウントで自動的にサインインするようにできます。 複数のプロバイダーで同じメール アドレスを使用する場合、`liveshare.accountProvider` 設定は `"microsoft"` または `"github"` のいずれかに設定できます。
 
 ブラウザーでサインイン プロセスを完了しても Visual Studio Code でサインインが取得されない場合は、[ユーザー コードを使用したサインイン](#sign-in-using-a-user-code)に関するページを参照してください。 それ以外の場合、詳細については、[トラブルシューティング](../troubleshooting.md#sign-in)に関するページを参照してください。
 
