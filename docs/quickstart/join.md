@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: c1f62cf12797279cc7bcb1a7ee1273667618ab46
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: ec3c983e91f849c6e966d2e5d0ae688e98b2b3f1
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987184"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322824"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -104,7 +104,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" width="100%" alt="Visual Studio Code sign in status bar item" />
+        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
@@ -118,7 +118,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 
 > **Linux ユーザー:** Live Share の古いバージョン (v0.3.295 以前) を使用している場合は、ユーザー コードの入力を求められる場合があります。 最新バージョンの拡張機能に更新するか、サインイン後に [問題が発生した場合] の リンクをクリックしてコードを表示します。 詳細については、[こちら](../use/vscode.md#sign-in-using-a-user-code)をご覧ください。
 
-**Visual Studio** では、ユーザーの[個人アカウント](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)が Live Share によって自動的に使用されます。 その結果、いつものように簡単にサインインできます。 ただし、Visual Studio の個人アカウント以外の別のサインインを使用する場合は、**[ツール] &gt; [オプション] &gt; [Live Share] &gt; [ユーザー アカウント]** の順に移動し、別の資格情報を選択します。
+**Visual Studio** では、ユーザーの[個人アカウント](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)が Live Share によって自動的に使用されます。 その結果、いつものように簡単にサインインできます。 ただし、Visual Studio の個人アカウント以外の別のサインインを使用する場合は、 **[ツール] &gt; [オプション] &gt; [Live Share] &gt; [ユーザー アカウント]** の順に移動し、別の資格情報を選択します。
 
 まだ問題がある場合は、[トラブルシューティング](../troubleshooting.md#sign-in)を参照してください。
 
