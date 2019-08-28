@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: eb631d2f3fecb07cb16b02d1cd02127221b0183d
-ms.sourcegitcommit: 94a6ec64e0054fe4829d554b7023a17a8c58a462
+ms.openlocfilehash: 65c48d1a95cc94bc7505c185be353e437e3c5ba1
+ms.sourcegitcommit: 6b46e300d76eda661ab34c67a3b909d5c162cd9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67501441"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062303"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -99,7 +99,7 @@ Visual Studio Live Share をダウンロードしてインストールしたら�
 
     初めてコラボレーション セッションを開始すると、Live Share のツール ウィンドウが表示されます。 次回 Live Share セッションを開始したときにこのウィンドウが表示されるように、必ずこれをドッキングしておきます。
 
-   ![VS Live Share ツール ウィンドウ | 72x561、50%](../media/vs-live-share-tool-window.png)
+   ![VS Live Share ツール ウィンドウ](../media/vs-live-share-tool-window.png)
 
     > [!NOTE]
     > 初めて共有するときに、Live Share エージェントがポートを開くのを許可するように、デスクトップのファイアウォール ソフトウェアから求められる場合があります。 これを受け入れるかどうかは任意ですが、共同作業する人が自分と同じネットワーク上にいるときには、セキュリティで保護された "ダイレクト モード" を有効にしてパフォーマンスを向上させます。 詳細については、[接続モードを変更する](../reference/connectivity.md#changing-the-connection-mode)のセクションを参照してください。
