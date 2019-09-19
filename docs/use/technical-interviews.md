@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 4ed24b7c73767086e5b44909dd958c174b4f3398
-ms.sourcegitcommit: ee0d569c893c2a89374026fe7df70fa3027eac1a
+ms.openlocfilehash: ba2fd7558df2658efffda1c8578450f9c678d35d
+ms.sourcegitcommit: 21e564ac23293e373b515892fa881d049f333cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/19/2019
-ms.locfileid: "71117911"
+ms.locfileid: "71127415"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="how-to-do-technical-interviews-using-live-share"></a>方法:Live Share を使用して技術的なインタビューを行う
 
-技術的なインタビューに Live Share の使用を開始する前に、次の1つの手順を完了する必要があります。次の手順に従って、 **Visual Studio と Live Share 拡張パックを marketplace からダウンロード**し[ます。](../use/vscode.md#Installation)
+技術的なインタビューに Live Share の使用を開始する前に、次の1つの手順を完了する必要があります。次の手順に従って、 **marketplace から Visual Studio Code と Live Share 拡張パックをダウンロードし**[ます。](../use/vscode.md#Installation)
 
 Live Share では、再利用可能なセッションをホストすることができます。 これは、技術的なインタビューのために Live Share セッションを事前にスケジュールでき、リンクが期限切れになる心配がないことを意味します。
 
