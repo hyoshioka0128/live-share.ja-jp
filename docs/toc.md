@@ -26,12 +26,15 @@
 ## [共同デバッグ](use/vs.md#co-debugging)
 ## [サーバーを共有する](use/vs.md#share-a-server)
 ## [ターミナルを共有する](use/vs.md#share-a-terminal)
+# 使い方ガイド:技術インタビュー
+## [技術インタビュー](use/technical-interviews.md)
 # 関連項目
 ## [セキュリティ](reference/security.md)
 ## [接続](reference/connectivity.md)
 ## [言語サポート](reference/platform-support.md)
 ## [拡張機能のサポート](reference/extensions.md)
 ## [一般的なユース ケース](reference/use-cases.md)
+
 ## [Linux インストールの詳細](reference/linux.md)
 ## [インサイダー](reference/insiders.md)
 ## [リリース ノート](https://aka.ms/vsls-releases)
