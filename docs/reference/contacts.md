@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: a3b4c9f2b469e937d958e82df28a04044abf38d3
-ms.sourcegitcommit: 50069912a317f8685976013e80738bbaa403a3fe
-ms.translationtype: HT
+ms.openlocfilehash: c1b3e71578ed3ffb306060cec3354f33423928be
+ms.sourcegitcommit: 24eb903744b837dcedff67d8179f06862bd2aa61
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72178476"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72250670"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="contacts-in-live-share"></a>Live Share の連絡先 
 
-Live Share を使用しており、外部アプリケーション (チャットや電子メールなど) 経由でのリンクの送信が非常に高速になる可能性があることに注意してください。 コラボレーションを促進する場合は、お客様の満足度をできるだけ少なくする必要があります。 これにより、Live Share 現在の**状態**になっている**連絡先**を持つことになります。
+Live Share を使用しており、外部アプリケーション (チャットや電子メールなど) 経由でのリンクの送信が非常に高速になる可能性があることに注意してください。 コラボレーションを促進する場合は、お客様の満足度をできるだけ少なくする必要があります。 これにより、Live Share の**連絡先**に**状態**が含まれるようになりました。
 
 >連絡先は、すべてのバージョンの**Live Share v 1.0.950**以降で自動的に有効になります。
 
@@ -60,12 +60,17 @@ Live Share を使用しており、外部アプリケーション (チャット�
 **4.Offline:** 長時間にわたって、または[共有状態](##ManagingPresence)を解除することを選択した場合は、オフラインになります。
 
 
-## 連絡先の状態<a name="ManagingPresence"></a>の管理
+## 連絡先の管理と状態<a name="ManagingPresence"></a>の共有
 
-この機能を無効にする場合は、`offline` にすることを選択するだけで、状態設定を無効にすることができます。 無効にすると、他の状態を確認して招待することができますが、自分の状態は発行されず、他のユーザーが直接招待することはできません。
+この機能を無効にする場合は、次の2つの方法で選択できます。
+1. @No__t-0 にすることを選択して、状態設定を無効にすることができます。 無効にすると、他の状態を確認して招待することができますが、自分の状態は発行されず、他のユーザーが直接招待することはできません。
 [状態] 円をクリックすると、次のドロップダウンメニューが表示され、オフラインにすることができます。
 
 ![dropdownstatus @ no__t-1 (<em>プレゼンスの状態のドロップダウンを示す</em>)
+
+2. @No__t-0 を開き、*Extensions > Visual Studio Live Share > Live Share にアクセスできます。存在 @ no__t-0 とプレゼンスサービスを無効にします。 無効にすると、他の状態を確認して招待することができますが、自分の状態は発行されず、他のユーザーが直接招待することはできません。
+
+![presencesettings](../media/vscode-presence-setting.png)
 
 ## <a name="faqs"></a>FAQ 
 
