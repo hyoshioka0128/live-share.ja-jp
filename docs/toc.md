@@ -29,6 +29,7 @@
 # 使い方ガイド:技術インタビュー
 ## [技術インタビュー](use/technical-interviews.md)
 # 関連項目
+## [連絡先](reference/contacts.md)
 ## [セキュリティ](reference/security.md)
 ## [接続](reference/connectivity.md)
 ## [言語サポート](reference/platform-support.md)
