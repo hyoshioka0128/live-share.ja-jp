@@ -1,6 +1,6 @@
 ---
-title: 接続 - Visual Studio の Live Share |Microsoft Docs
-description: Visual Studio Live Share の接続と接続モードの情報。
+title: 接続-Visual Studio Live Share |Microsoft Docs
+description: Visual Studio Live Share の接続モードと接続モードについて説明します。
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: c685df798fc10b449c3e73db678e3b5d34e73ef0
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: c1d537ac80daddcf83d18942c8d837f3c0ce370b
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640082"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169990"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,70 +24,70 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="connectivity-requirements-for-live-share"></a>Live Share の接続要件
+# <a name="connectivity-requirements-for-live-share"></a>Live Share の接続性要件
 
-この記事では、Visual Studio Live Share、使用可能な接続オプション、および該当する場合の既知の回避策の接続要件をまとめたものです。
+この記事では、Visual Studio Live Share の接続要件、使用可能な接続オプション、および該当する場合の既知の回避策について説明します。
 
 ## <a name="sign-in"></a>サインイン
 
-Live Share を使用してサインインできます[Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory)バックアップされた職場または学校のアカウントを[Microsoft アカウント](https://account.microsoft.com/account)、または[GitHub プロファイル](https://github.com/)します。 通常、サインイン Url の場合そうでないが、それを使用するパブリックに公開された製品の数を指定されたほとんどの組織で開かれているこれらを開示すること、ネットワーク管理者にお問い合わせください`login.microsoftonline.com`や`github.com`ドメインだけでなく[。以下に示す](#requirements-for-connection-modes)します。
+Live Share にサインインするには、 [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory)バックアップされた職場または学校アカウント、 [Microsoft アカウント](https://account.microsoft.com/account)、または[GitHub プロファイル](https://github.com/)を使用します。 通常、このような場合のサインイン Url は、それらを使用する公開製品の数によって、ほとんどの組織で開かれていますが、そうでない場合は、ネットワーク管理者に連絡して、[以下](#requirements-for-connection-modes)のドメインに加えて `login.microsoftonline.com` や `github.com` を開くことを依頼してください。
 
 > [!NOTE]
-> オンプレミス AD (ADFS) のアカウントと GitHub Enterprise アカウントをオンプレミスで現在サポートされていない[(上向きの矢印に投票👍)](https://github.com/MicrosoftDocs/live-share/issues/341)します。
+> オンプレミス AD (ADFS) アカウントとオンプレミスの GitHub エンタープライズアカウントは、現在サポートされていません[(アップ投票 👍)](https://github.com/MicrosoftDocs/live-share/issues/341)。
 
 ## <a name="connection-modes"></a>接続モード
 
-最適なことを確認するには、パフォーマンス、既定では Visual Studio Live Share を自動的に検出コラボレーション セッション ホスト マシンとゲスト マシンとのみそれらの間のルートがない場合は、クラウド経由でリレーかどうかをネットワーク経由で直接通信できます。 この混合"auto"モードは柔軟性があり他のユーザーが、同じセッションに対して直接接続するときに、クラウドを介して中継するいくつかのゲストをも可能です。
+最適なパフォーマンスを得るために、既定では Visual Studio Live Share は、コラボレーションセッションホストコンピューターとゲストコンピューターがネットワーク経由で直接通信できるかどうかを自動的に検出し、それらの間にルートがない場合はクラウド経由でのみリレーします。 このように混合された "自動" モードは柔軟であり、一部のゲストはクラウド経由でリレーでき、他のゲストは同じセッションに直接接続できます。
 
-直接接続は、セキュリティを確保するが、接続を有効にする、5990 ~ 5999 ポートを開く必要がありますにクラウド ベースのメカニズムを使用して認証されます。 その結果、求めることができます、デスクトップのファイアウォールを最初に共有するときに、ポートを開きます。 無視としてオプションを受け入れると、常に自動モードでリレーを使用する Live Share が単に発生します。
+直接接続は、セキュリティを確保するためにクラウドベースのメカニズムを使用して認証されますが、接続を有効にするために5990と5999の間にポートを開く必要があります。 このため、最初にデスクトップファイアウォールでポートを開くように求めるメッセージが表示されたときに共有すると、 この指定は省略できます。これを無視すると、auto モードのときに Live Share が常にリレーを使用するようになります。
 
-Visual Studio Live Share のすべての接続は、ことコラボレーション セッションでのみ、そのコンテンツへのアクセスができることを確認するには、SSH または SSL 暗号化され、中央のサービスに対して認証されます。 さらに、Live Share のクラウド リレーでは、トラフィックを経由してルーティングを無効になるしはない「覗き見」任意の方法でトラフィック。
+Visual Studio Live Share のすべての接続は、SSH または SSL で暗号化され、中央サービスに対して認証され、コラボレーションセッション内のものだけがコンテンツにアクセスできるようにします。 さらに、Live Share のクラウドリレーでは、トラフィックがルーティングされることはなく、トラフィックをどのような方法でも "snoop" することはありません。
 
-## <a name="changing-the-connection-mode"></a>接続モードを変更します。
+## <a name="changing-the-connection-mode"></a>接続モードの変更
 
-希望する、直接またはリレー型接続を無効にするか、または接続の問題のトラブルシューティングを単に場合は、その他の接続モードを強制できます。
+直接接続またはリレー接続を無効にしたい場合や、接続の問題のトラブルシューティングを行う場合は、他の接続モードを強制することができます。
 
 | モード | ホストの動作 | ゲストの動作 |
 |------|----------------|----------------------|
-| 自動 | ホストの共同作業セッションは、セキュリティで保護された、認証済みの直接接続またはクラウド リレー接続を受け入れます。 | 直接接続を使用しようとして失敗した場合、クラウドを介して中継にフォールバックします。 |
-| 直接 | ホストの共同作業セッションは、直接、セキュリティで保護された認証済みの接続のみを受け入れます。 | 直接接続しようとして接続できない場合は停止します。 |
-| Relay | ホストの共同作業セッションでは、直接接続は許可されません。 ホストのコンピューター上で開かれているポートはありません。 | 常に、クラウド経由で接続します。 |
+| 自動 | ホストのコラボレーションセッションは、セキュリティで保護された、認証された直接接続またはクラウドリレー接続を受け入れます。 | は、直接接続を使用しようとし、失敗した場合には、クラウドのリレーにフォールバックします。 |
+| 直接 | ホストのコラボレーションセッションでは、認証された安全な直接接続のみが受け入れられます。 | 直接接続の使用を試み、接続できない場合は停止します。 |
+| Relay | ホストのコラボレーションセッションでは、直接接続は許可されていません。 ホストのコンピューターでポートが開かれていません。 | 常にクラウド経由で接続します。 |
 
-モードを変更するには。
+モードを変更するには:
 
-**VS:**
+**VS>**
 
-1. ツール > オプション > Live 共有します。
-2. "接続モード ドロップダウン リストから、モードを選択します。
+1. ツール > オプション > Live Share にアクセスします。
+2. [接続モード] ドロップダウンからモードを選択します。
 3. VS を再起動します。
 
-**VS Code:**
+**VS Code：**
 
-1. Settings.json の編集 (ファイル > 設定 > 設定)。
-2. 設定`"liveshare.connectionMode"`に`"auto"`、 `"direct"`、または`"relay"`好みに応じて。
+1. [設定の編集] (ファイル > 基本設定 > 設定) を編集します。
+2. 設定に応じて、`"liveshare.connectionMode"` を `"auto"`、`"direct"`、または `"relay"` に設定します。
 3. VS Code を再起動します。
 
 ## <a name="requirements-for-connection-modes"></a>接続モードの要件
 
-接続モードでは、特定のポートと関数には、Live Share を使用する必要がある Url が決まります。
+使用する接続モードによって、Live Share が機能するために使用する必要がある特定のポートと Url が決まります。
 
-| モード | クライアント アクセスの要件 | トラブルシューティング |
+| モード | クライアントアクセス要件 | トラブルシューティング |
 |------|--------------|-----------------|
-| どれでも可 | 発信アクセス `*.liveshare.vsengsaas.visualstudio.com:443` | 個人のネットワークのファイアウォールでは、このドメインに接続できます。 または、会社の確認をします。 入力 https://insiders.liveshare.vsengsaas.visualstudio.com ブラウザーで、Visual Studio Live Share ホーム ページに着陸したことを確認します。 実行しても[プロキシの問題](#proxies)を解決する必要があります。|
-| 任意 (VS Code) | 発信アクセス `download.microsoft.com:443` | 個人のネットワークのファイアウォールでは、このドメインに接続できます。 または、会社の確認をします。 実行しても[プロキシの問題](#proxies)を解決する必要があります。 |
-| 自動 | 自動スイッチ。 直接参照してくださいとリレーのモード。 | 直接またはリレーをトラブルシューティングするモードに切り替えます。 |
-| 直接 | ホスト:ローカル ネットワークの着信接続を受け入れるように開かれている範囲 5990 5999 ニーズを満たすポート。<br /><br />ゲストの場合:ネットワーク ルートと同じポート上のホストへの発信アクセス。 | 「Vsls エージェント」がこのポートの範囲は、デスクトップのファイアウォール ソフトウェアによってブロックされていないと、互いを ping できることを確認します。 Windows およびその他のデスクトップ ソフトウェアように求めるメッセージが最初に、エージェントの起動時、中にインスタンスをグループ ポリシーはこれを防ぐし、する必要があります見てきた[エントリを手動で追加](#manually-adding-a-firewall-entry)します。 実行しても[プロキシの問題](#proxies)を解決する必要があります。 |
-| Relay | 発信アクセス`*.servicebus.windows.net:443`します。 | 個人のネットワークのファイアウォールでは、このドメインに接続できます。 または、会社の確認をします。 実行しても[プロキシの問題](#proxies)を解決する必要があります。|
+| どれでも可 | `*.liveshare.vsengsaas.visualstudio.com:443` への発信アクセス | 企業または個人のネットワークファイアウォールで、このドメインに接続できることを確認します。 ブラウザーで https://insiders.liveshare.vsengsaas.visualstudio.com を入力し、Visual Studio Live Share のホームページに移動していることを確認します。 また、解決する必要がある[プロキシの問題](#proxies)が発生している可能性があります。|
+| 任意 (VS Code) | `download.microsoft.com:443` への発信アクセス | 企業または個人のネットワークファイアウォールで、このドメインに接続できることを確認します。 また、解決する必要がある[プロキシの問題](#proxies)が発生している可能性があります。 |
+| 自動 | 自動スイッチ。 「直接モードとリレーモード」を参照してください。 | 直接モードまたはリレーモードに切り替えて、トラブルシューティングを行います。 |
+| 直接 | ホスト: 受信ローカルネットワーク接続を受け入れるには、5990 ~ 5999 の範囲のポートを開く必要があります。<br /><br />ゲスト: この同じポートでのホストへのネットワークルートと発信アクセス。 | このポート範囲のデスクトップファイアウォールソフトウェアによって "vsls-agent" がブロックされていないこと、および ping を実行できることを確認してください。 Windows およびその他のデスクトップソフトウェアでは、エージェントを初めて起動するときにプロンプトが表示されますが、グループポリシーが原因でこの問題が発生しない場合は、[手動でエントリを追加](#manually-adding-a-firewall-entry)する必要があります。 また、解決する必要がある[プロキシの問題](#proxies)が発生している可能性があります。 |
+| Relay | `*.servicebus.windows.net:443`への発信アクセス。 | 企業または個人のネットワークファイアウォールで、このドメインに接続できることを確認します。 また、解決する必要がある[プロキシの問題](#proxies)が発生している可能性があります。|
 
-## <a name="manually-adding-a-firewall-entry"></a>ファイアウォールのエントリを手動で追加します。
+## <a name="manually-adding-a-firewall-entry"></a>手動によるファイアウォールエントリの追加
 
-直接モードは、パーソナル ファイアウォールが許可が必要です、上記のように、 **vsls エージェント**5990 5999 の範囲は、ポートで接続を受け入れるようにします。 直接モードを使用して、、ファイアウォールに vsls エージェントのエントリがないことを見つけた場合は、手動で追加することができます。 この方法は、ファイアウォール ソフトウェアによって異なりますが、に関する情報を得られる **[ここで Windows ファイアウォールを構成する](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)** します。
+前述のように、direct モードでは、パーソナルファイアウォールで、 **vsls エージェント**がポート範囲5990-5999 の接続を受け入れることを許可する必要があります。 Direct モードを使用するが、ファイアウォールに vsls-agent エントリがないことがわかっている場合は、手動で追加することができます。 この方法はファイアウォールソフトウェアによって異なりますが、 **[Windows ファイアウォールの構成](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)** については、こちらを参照してください。
 
-Vsls エージェントのエントリが表示されない場合、エージェント実行可能ファイルで見つかります、次の場所のいずれか。
+Vsls エージェントのエントリが表示されない場合は、次のいずれかの場所でエージェント実行可能ファイルを見つけることができます。
 
-### <a name="vs-code-agent-location"></a>VS コードのエージェントの場所
+### <a name="vs-code-agent-location"></a>VS Code エージェントの場所
 
-代替**バージョン**下のパスの 1 つの拡張機能のバージョン番号の。
+次のいずれかのパスで、拡張機能のバージョン番号の代わりに**バージョン**を指定します。
 
 - **macOS、Linux**
 
@@ -99,32 +99,32 @@ Vsls エージェントのエントリが表示されない場合、エージェ
 
 ### <a name="visual-studio-agent-location"></a>Visual Studio エージェントの場所
 
-Visual Studio の場所がより動的には、次の手順を実行、実行可能ファイルを検索することができます。
+Visual Studio の場所は動的ですが、次の手順に従って実行可能ファイルを見つけることができます。
 
-1. Visual Studio のインストール場所に移動します。 これは通常`C:\Program Files (x86)\Microsoft Visual Studio\EDITION`場所**EDITION** Community、Enterprise などには
+1. Visual Studio のインストール場所に移動します。 これは通常、**エディション**が Community、Enterprise などの `C:\Program Files (x86)\Microsoft Visual Studio\EDITION`
 
-2. 検索が実行`vsls-agent.exe`の下で、 **IDE\Extensions**サブ フォルダー。
+2. Ide の **拡張機能** サブフォルダーの下にある `vsls-agent.exe` の検索を実行します。
 
-残念ながら、この手順を実行する必要があります**Visual Studio Live Share を更新するたびにします。**
+残念ながら、 **Visual Studio Live Share を更新する**たびにこの手順を実行することが必要になる場合があります。
 
 ## <a name="proxies"></a>プロキシ
 
-Visual Studio Live Share は、現在、プロキシの使用方法に関するいくつかの制限を持ちます。 自動プロキシの設定は、macOS または Linux を使用する場合 (および Windows での特定のプロキシ構成を使って)、Windows で機能する必要があります、 **HTTP_PROXY**と**HTTPS_PROXY**環境変数がする必要があります設定する*グローバル*します。
+Visual Studio Live Share 現在、プロキシの使用に関していくつかの制限があります。 自動プロキシ設定は Windows で機能しますが、macOS または Linux (および Windows での特定のプロキシ構成) を使用する場合は、 **HTTP_PROXY**環境変数と**HTTPS_PROXY**環境変数を*グローバル*に設定する必要があります。
 
-場合は、プロキシでは、これらの設定は自動的に、次の形式で、変数を手動で設定できます。
+プロキシでこれらの設定が自動的に行われない場合は、次の形式で手動で変数を設定できます。
 
 `HTTPS_PROXY=http://proxy-ip-address:proxyport`
 
-に対して認証プロキシがあれば、することができます、ユーザーとパスワードよう追加します。
+認証プロキシを使用している場合は、次のようにユーザーとパスワードを追加できます。
 
 `HTTPS_PROXY=http://user:password@proxy-ip-address:proxyport`
 
-これらの設定、問題が解決しない場合[ご連絡ください](https://github.com/MicrosoftDocs/live-share/issues/86)プロキシの詳細セットアップのでサポートの向上を見ることができます。
+これらの設定によって問題が解決されない場合は、プロキシの設定の詳細をお知らせください。サポートの改善にご[協力ください](https://github.com/MicrosoftDocs/live-share/issues/86)。
 
 ## <a name="see-also"></a>関連項目
 
-- [方法:Visual Studio Code を使用して共同作業する](../use/vscode.md)
-- [方法:Visual Studio を使用して共同作業する](../use/vs.md)
+- [方法: Visual Studio Code を使用したコラボレーション](../how-to-guides/vscode.md)
+- [方法: Visual Studio を使用して共同作業する](../how-to-guides/vs.md)
 - [Live Share のセキュリティ機能](security.md)
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。

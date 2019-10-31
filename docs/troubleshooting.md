@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: afa11a77156fd0227c9d9cfd5ce701ae0211386e
-ms.sourcegitcommit: 5e0d384c71793a83b58023352f56f0a24783a2e4
+ms.openlocfilehash: 087c3b209c8762e08b8d663f7c0a6fb3a40fee19
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72531045"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170041"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -51,7 +51,7 @@ Visual Studio Live Share のインストールに関連するトラブルシュ�
 | すべて | <strong>タイムアウトまたは接続エラーが発生</strong>しています。 | 「[接続のトラブルシューティング](#connectivity)」を参照してください。 |
 | すべて | Microsoft の**勤務先または学校の電子メールアドレス**を使用してサインインすると、 **"管理者の承認が必要です"** というメッセージが表示されます。 | Azure AD の理念は、ディレクトリの内容にアクセスする新しいアプリケーションに対して "管理者の同意" を要求するように設定されています。 詳細について[は、こちら](reference/security.md)を参照してください。 |
 | VS Code (**macOS**) | サインインすると、 **SecKeychainAddGenericPassword () が失敗した**ことを示すエラーが表示されます。 | これは、ほとんどの場合、パスワードの変更がログインキーチェーンに反映されない macOS に関する一般的な問題が原因です。 "キーチェーンアクセス" に移動し、ログインキーチェーンをロックしてから、もう一度ロックを解除してください。 これは問題を解決するのに十分な場合がありますが、現在のパスワードを使用してロックを解除できない場合は、前のパスワードを試してください。 その場合は、ログインキーチェーンパスワードを現在のパスワードに変更します。 詳細について[は、こちら](https://support.apple.com/en-us/HT201609)を参照してください。 |
-| VS Code (**Linux**) | ブラウザーを使用してサインインした後、ユーザーコードに入力すると、 **secret_password_store_sync () がエラーコード XX で失敗**したことを示すエラーが表示されます。 | これは、通常、`gnome-keyring` または `libsecret-1-0` /  `libsecret` インストールされていないことが原因です。 @No__t_0 をインストールし、デスクトップ環境で "パスワードとキー" アプリケーションを使用することによって、gnome キーリングが正しく構成されていることを確認できます。 [Linux の前提条件](reference/linux.md#install-linux-prerequisites)の詳細については、こちらを参照してください。 |
+| VS Code (**Linux**) | ブラウザーを使用してサインインした後、ユーザーコードに入力すると、 **secret_password_store_sync () がエラーコード XX で失敗**したことを示すエラーが表示されます。 | これは、通常、`gnome-keyring` または `libsecret-1-0` /  `libsecret` インストールされていないことが原因です。 `seahorse` をインストールし、デスクトップ環境で "パスワードとキー" アプリケーションを使用することによって、gnome キーリングが正しく構成されていることを確認できます。 [Linux の前提条件](reference/linux.md#install-linux-prerequisites)の詳細については、こちらを参照してください。 |
 | VS Code (**Linux**) | Live Share v 0.3.295 以下の<strong>ユーザーコードを入力する</strong>ように求められますが、ブラウザーを取得できません。 | Linux でのユーザーコードの要件をなくすために取り組んでいます。 平均時間では、サインインに使用するブラウザーウィンドウが表示されます。 それ以外の場合は、[VS Code] の下にブラウザーウィンドウが非表示になっている可能性があります。 そうでない場合は、次のヒントを参照してください。  |
 | VS Code | [サインイン] をクリックするか (または、[Live Share: サインイン] コマンドを使用して)、<strong>資格情報を入力できるブラウザーウィンドウが表示されません</strong>。 | 1.[ここにサインイン](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login)します<br />2. サインインした後、[問題が発生していますか?] をクリックします。<br /> 3. 指示に従って、ツールに一時的なユーザーコードを入力します。 |
 | すべて | コラボレーションセッションに<strong>参加</strong>しようとしていますが、<strong>電子メールの更新プログラムを受信しない</strong>ようにします。 </strong>。 | VS/VS Code の Live Share 拡張機能にサインインしても、電子メールの更新を受け取ることはでき<strong>ません</strong>。<br /><br />Live Share には、ゲストがセキュリティ対策としてサインインし、ホストが参加している id を認識できるようにする必要があります。 [この機能](https://github.com/MicrosoftDocs/live-share/issues/3)は、匿名ユーザーが参加することを許可するオプションを希望する場合に投票します (たとえば、名前/ユーザー定義名がないユーザー)。 |
@@ -95,10 +95,10 @@ Visual Studio Live Share のインストールに関連するトラブルシュ�
 
 方法
 
-- [Visual Studio Code を使用して共同作業する](use/vscode.md)
-- [Visual Studio を使用して共同作業する](use/vs.md)
+- [Visual Studio Code を使用して共同作業する](how-to-guides/vscode.md)
+- [Visual Studio を使用して共同作業する](how-to-guides/vs.md)
 
-参照
+辞書／辞典／その他
 
 - [すべての主要なバグ、機能要求、および制限事項](https://aka.ms/vsls-issues)
 - [すべての機能要求および制限事項](https://aka.ms/vsls-feature-requests)
