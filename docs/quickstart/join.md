@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: ec3c983e91f849c6e966d2e5d0ae688e98b2b3f1
-ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
+ms.openlocfilehash: b550790fff3a5ed70db9e1256e020c1865215866
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67322824"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170028"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -44,7 +44,7 @@ Visual Studio Live Share へようこそ。 Live Share を使うと、使って�
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
-        1. Windows (7、8.1、または 10)、macOS <b>(Sierra+)</b>、64 ビット Linux <b>(<a href="../use/vscode.md#installation">詳細</a>)</b> 用の <a href="https://code.visualstudio.com/">Visual Studio Code</a> をインストールします<br />
+        1. Windows (7、8.1、または 10)、macOS <b>(Sierra+)</b>、64 ビット Linux <b>(<a href="../how-to-guides/vscode.md#installation">詳細</a>)</b> 用の <a href="https://code.visualstudio.com/">Visual Studio Code</a> をインストールします<br />
         2. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
         3. 再度読み込み、依存関係がダウンロードおよびインストールされるまで待機します (ステータス バーを参照)。<br />
         4. <strong>Linux</strong>:<a href="../reference/linux.md#install-linux-prerequisites">ライブラリのインストール</a>を求められた場合は、インストールをクリックし、パスワードを入力して、完了したら VS Code を再起動します。<br />
@@ -116,7 +116,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 
 ![Web ブラウザーを使用してサインインを求めるトースト通知](../media/vscode-sign-in-toast.png)
 
-> **Linux ユーザー:** Live Share の古いバージョン (v0.3.295 以前) を使用している場合は、ユーザー コードの入力を求められる場合があります。 最新バージョンの拡張機能に更新するか、サインイン後に [問題が発生した場合] の リンクをクリックしてコードを表示します。 詳細については、[こちら](../use/vscode.md#sign-in-using-a-user-code)をご覧ください。
+> **Linux ユーザー:** Live Share の古いバージョン (v0.3.295 以前) を使用している場合は、ユーザー コードの入力を求められる場合があります。 最新バージョンの拡張機能に更新するか、サインイン後に [問題が発生した場合] の リンクをクリックしてコードを表示します。 詳細については、[こちら](../how-to-guides/vscode.md#sign-in-using-a-user-code)をご覧ください。
 
 **Visual Studio** では、ユーザーの[個人アカウント](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)が Live Share によって自動的に使用されます。 その結果、いつものように簡単にサインインできます。 ただし、Visual Studio の個人アカウント以外の別のサインインを使用する場合は、 **[ツール] &gt; [オプション] &gt; [Live Share] &gt; [ユーザー アカウント]** の順に移動し、別の資格情報を選択します。
 
@@ -159,8 +159,8 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 詳細については、次の記事をご確認ください。
 
 - [クイック スタート:最初のプロジェクトを共有する](share.md)
-- [方法:Visual Studio Code を使用して共同作業する](../use/vscode.md)
-- [方法:Visual Studio を使用して共同作業する](../use/vs.md)
+- [方法:Visual Studio Code を使用して共同作業する](../how-to-guides/vscode.md)
+- [方法:Visual Studio を使用して共同作業する](../how-to-guides/vs.md)
 
 関連項目
 
