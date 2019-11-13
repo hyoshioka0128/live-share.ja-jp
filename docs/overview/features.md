@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8091a7ba5cf1f57f192ecea18da4473c8fdd99f7
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 79ff9d0218fe0ef83cf78fa7163aaad8c1f97edd
+ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73179951"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74019774"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -37,13 +37,13 @@ Visual Studio Live Share 内のすべてのコラボレーション アクティ
 
 ホストとして "共有" する場合、プロジェクト、ソリューション、またはフォルダーの内容を共有するコラボレーション セッションを開始します。 ゲストは、ご自身が送信する招待リンクを使ってこのコンテンツへのアクセスを取得します。 "共有" は "プロジェクトを共有" の短縮形ですが、デバッグのような他の機能を共有するためにも使用されます。
 
-**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project)
+**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
 
 #### <a name="joining"></a>結合
 
 ホストから送信された招待リンクをクリックすると、ゲストとしてコラボレーション セッションに "参加" することができ、ホストが共有することを選択したすべてのコンテンツや機能にアクセスできます。 Web リンクにより、既に拡張機能をインストールしている場合はコラボレーション セッションを始めるための簡単な方法が、それ以外の場合は情報を設定するための簡単な方法が提供されます。
 
-**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#join-a-collaboration-session) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#join-a-collaboration-session)
+**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#join-a-collaboration-session) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#join-a-collaboration-session)
 
 ### <a name="features"></a>フィーチャー
 
@@ -54,13 +54,13 @@ Visual Studio Live Share 内のすべてのコラボレーション アクティ
 > [!NOTE]
 > 共同編集にはいくつかの制限事項があります。 言語ごとの機能の状態については、[プラットフォームのサポート](../reference/platform-support.md)に関するページをご覧ください。
 
-**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-editing) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-editing)
+**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-editing) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-editing)
 
 #### <a name="following-and-focusing"></a>フォローとフォーカス
 
 複数のファイルやコード内の場所にまたがる問題や設計について説明する必要がある場合があります。 このような状況では、共同編集するときに、プロジェクト全体を移動する同僚を一時的にフォローすると便利な場合があります。 このため、ゲストは、コラボレーション セッションに参加するとホストの編集場所を自動的に "フォロー" します。 ホストとゲストは、簡単なマウス クリックでお互いのフォローを開始および終了できます。 さらに、すべての参加者に対して自分をフォローするよう求めたい場合があります。 Live Share では、フォローが返しやすくなる通知を使って、全員が自分に注意を "フォーカス" するよう要求することができます。
 
-**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#following) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#following)
+**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#following) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#following)
 
 #### <a name="co-debugging"></a>共同デバッグ
 
@@ -69,19 +69,19 @@ Visual Studio Live Share 内のすべてのコラボレーション アクティ
 > [!NOTE]
 > 言語またはプラットフォームごとのデバッグ機能の状態については、[プラットフォームのサポート](../reference/platform-support.md)に関するページをご覧ください。
 
-**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging)
+**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
 
 #### <a name="share-server--share-port"></a>サーバーの共有 / ポートの共有
 
 共同デバッグを行うとき、デバッグ セッション用にホストが提供するアプリケーションのさまざまな部分にアクセスできると非常に便利です。 ブラウザーでアプリにアクセスしたり、ローカル データベースにアクセスしたり、またはツールから REST エンドポイントを指定したりしたい場合があります。 Live Share では "サーバーを共有" することができます。これにより、ホストのマシン上のローカル ポートが、各ゲストのマシン上のまったく同じポートにマップされます。 次にゲストは、そのアプリケーションが自分のマシン上でローカルに実行されている場合とまったく同じように、それとやり取りすることができます (たとえば、ホストとゲストの両方が、次で実行される Web アプリにアクセスできます: http://localhost:3000) 。
 
-**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server)
+**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
 
 #### <a name="share-terminals"></a>ターミナルの共有
 
 最新の開発では、さまざまなコマンド ライン ツールを頻繁に使用します。 ありがたいことに、Live Share を使うとホストは必要に応じてゲストと "ターミナルを共有" することができます。 共有されたターミナルは、読み取り専用または完全な共同作業用にすることができます。このため、ホストとゲストの両方がコマンドの実行と結果の確認を行うことができます。 ホストは、他のコラボレーターが各自でコマンドを実行できるのか、またはただコマンドの出力を確認できるだけなのかどうかを、いつでも管理し、決定することができます。 実際、自分だけが確認したい操作は、すべて非共有のターミナルで実行できます。
 
-**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal)
+**詳細情報:** [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
 #### <a name="access-controls"></a>アクセスの制御
 
