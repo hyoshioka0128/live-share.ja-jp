@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1057c6276302fb0df682798dd06684b4835c051e
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 0d46cb53a28bfac1c088371ff5eecdb6af0c8420
+ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170119"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74019790"
 ---
 # <a name="join-a-session-manually"></a>セッションに手動で参加する
 
@@ -28,7 +28,7 @@ ms.locfileid: "73170119"
 
 ### <a name="1-sign-in"></a>1. サインイン
 
->**注:** コラボレーションセッションを読み取り専用のゲストとして参加させる場合は、サインインをスキップできます。 共有されているが編集できないコードを表示および移動するためのアクセス権があります。
+>**注:** コラボレーションセッションを読み取り専用の guesasdsat として参加させる場合は、サインインをスキップできます。 共有されているが編集できないコードを表示および移動するためのアクセス権があります。
 
 ![Web ブラウザーを使用してサインインを求めるトースト通知](../media/vscode-sign-in-toast.png)
 
@@ -58,7 +58,7 @@ VS Code アクティビティバーで Live Share viewlet を開き、[コラボ
 
 ### <a name="1-sign-in"></a>1. サインイン
 
-インストールが完了したら、Visual Studio を起動してサインインします (まだサインインしていない場合)。 [個人用設定アカウント](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)よりも Visual Studio 用の別のサインインを使用する必要がある場合は、[**ツール] &gt; [オプション] &gt; Live Share &gt; ユーザーアカウント**] にアクセスしてください。
+インストールが完了したら、Visual Studio を起動してサインインします (まだサインインしていない場合)。 [個人用設定アカウント](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)よりも Visual Studio 用の別のサインインを使用する必要がある場合は、[**ツール] &gt; [オプション] &gt; Live Share &gt; ユーザーアカウント**]にアクセスしてください。
 
 ![VS サインイン](../media/vs-sign-in-button.png)
 
@@ -85,8 +85,8 @@ VS Code アクティビティバーで Live Share viewlet を開き、[コラボ
 
 方法
 
-- [方法: Visual Studio Code を使用したコラボレーション](../how-to-guides/vscode.md)
-- [方法: Visual Studio を使用して共同作業する](../how-to-guides/vs.md)
+- [方法: Visual Studio Code を使用したコラボレーション](../use/vscode.md)
+- [方法: Visual Studio を使用して共同作業する](../use/vs.md)
 - [方法: フィードバックを提供する](../support.md)
 
 辞書／辞典／その他
