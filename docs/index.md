@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 6f46f65a362d4fff46e21a647e4b677a7d45b3e7
-ms.sourcegitcommit: ab8a49a163cc89f69ed9f117fb34e25bf0f00ae1
+ms.openlocfilehash: 3f6ad9fd00984abeca2b826addee54271eb1191a
+ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73190676"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74019756"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -39,7 +39,7 @@ Visual Studio Live Share へようこそ。 Live Share では、使っている�
 
 開始する前に、Live Share のコア要件を満たす Visual Studio または Visual Studio Code のバージョンがインストールされていることを確認する必要があります。
 
-- **Visual Studio Code 1.22.0 以上** - Windows 7、8.1、または 10、macOS " *(Sierra 10.12 以上のみ)* "、64 ビット Linux " *(64 ビット Ubuntu Desktop 16.04 以上、Fedora 27 以上が推奨されます - [詳細情報](how-to-guides/vscode.md#installation))* "。
+- **Visual Studio Code 1.22.0 以上** - Windows 7、8.1、または 10、macOS " *(Sierra 10.12 以上のみ)* "、64 ビット Linux " *(64 ビット Ubuntu Desktop 16.04 以上、Fedora 27 以上が推奨されます - [詳細情報](use/vscode.md#installation))* "。
 - **Visual Studio 2019** (任意のエディション) - Windows 7、8.1、または 10。
 - **Visual Studio 2017 15.6 以上** (任意のエディション) - Windows 7、8.1、または 10。
 
@@ -50,7 +50,7 @@ Visual Studio Live Share へようこそ。 Live Share では、使っている�
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
-        1. Windows (7、8.1、または 10)、macOS <b>(Sierra+)</b>、64 ビット Linux <b>(<a href="how-to-guides/vscode.md#installation">詳細</a>)</b> 用の <a href="https://code.visualstudio.com/">Visual Studio Code</a> をインストールします<br />
+        1. Windows (7、8.1、または 10)、macOS <b>(Sierra+)</b>、64 ビット Linux <b>(<a href="use/vscode.md#installation">詳細</a>)</b> 用の <a href="https://code.visualstudio.com/">Visual Studio Code</a> をインストールします<br />
         2. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
         3. 再度読み込み、依存関係がダウンロードおよびインストールされるまで待機します (ステータス バーを参照)。<br />
         4. <strong>Linux</strong>:<a href="reference/linux.md#install-linux-prerequisites">ライブラリのインストール</a>を求められた場合は、インストールをクリックし、パスワードを入力して、完了したら VS Code を再起動します。<br />
@@ -92,8 +92,8 @@ Visual Studio Live Share をダウンロードして使用すると、[ライセ
 
 方法
 
-- [Visual Studio Code を使用して共同作業する](how-to-guides/vscode.md)
-- [Visual Studio を使用して共同作業する](how-to-guides/vs.md)
+- [Visual Studio Code を使用して共同作業する](use/vscode.md)
+- [Visual Studio を使用して共同作業する](use/vs.md)
 
 参照
 
