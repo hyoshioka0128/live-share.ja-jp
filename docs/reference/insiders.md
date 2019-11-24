@@ -36,8 +36,8 @@ Visual Studio Live Share チームは、迅速に反復処理し、新しいア�
 Live Share は再利用可能なセッションをホストできるようになりました。 再利用可能なセッションを使用すると、さまざまなシナリオで Live Share セッションを再利用できます。これは、技術的なインタビュー、毎週の mob セッション、友人の指導中に同じセッションを使用して、さらに多くのことを行うために、Live Share セッションを事前にスケジュールできることを意味します。
 
 再利用可能なセッションを作成するには、次の手順を実行します。
-1. @No__t-1 を使用して `Command Palette` にアクセスします。
-1. 「Live Sha...」と入力します。次に、[** @ no__t-1Live Share] をクリックします。再利用可能なセッションリンク @ no__t-0 @ no__t-1 ' コマンドを作成します。
+1. を使用して `Command Palette` にアクセス `Ctrl+Shift+P`
+1. 「Live Sha...」と入力します。[ **_Live Share: 再利用可能なセッションリンクの作成_** ] コマンドをクリックします。
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -54,9 +54,9 @@ Live Share は再利用可能なセッションをホストできるようにな
 
 ## Insider <a name="BecomeanInsider"></a>になる
 
-既定では、Visual Studio Live Share 拡張機能をインストールした後、@no__t 0 の機能セットを使用しています。これには、すべての実稼働対応機能 (共同編集、共有デバッグ、ターミナルなど) が含まれます。 ただし、作業中の機能にすぐにアクセスできるようにするには、IDE で次の設定を変更して、@no__t 0 の機能セットを選択することができます。
+既定では、Visual Studio Live Share 拡張機能をインストールした後、`Stable` 機能セットを使用しています。これには、すべての実稼働対応機能 (共同編集、共有デバッグ、ターミナルなど) が含まれます。 ただし、作業中の機能にすぐにアクセスできるようにするには、IDE で次の設定を変更して `Insiders` 機能セットを選択します。
 
-* Visual Studio
+* Visual Studio
 
     ![機能セット-vs](../media/feature-set-vs.png)
 
@@ -64,11 +64,11 @@ Live Share は再利用可能なセッションをホストできるようにな
 
     ![機能セット-vscode](../media/feature-set-vscode.png)
 
-次のセクションでは、現在 @no__t 0 の機能セット内にある一連の機能について説明します。したがって、前述の設定を変更した後で評価することができます。
+以下のセクションでは、現在 `Insiders` 機能セット内にある一連の機能について説明します。したがって、前述の設定を変更した後で評価することができます。
 
 
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [言語とプラットフォームのサポート](platform-support.md)
 - [Live Share の接続要件](connectivity.md)
