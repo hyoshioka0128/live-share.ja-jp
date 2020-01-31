@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 27a3d76f14cd3c8df312abe7ab36185109ac7e89
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 69bc178ebb4052757f984d67482d216335f46dac
+ms.sourcegitcommit: 5180aab73c086cbded6aae01aa01f71fb991dee1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170136"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818077"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -63,7 +63,7 @@ Linux のディストリビューションによっては、Live Share が機能
 | Fedora ワークステーション 27 (64 ビット) | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME デスクトップ (64 ビット) | &lt;none&gt; | &lt;none&gt; |
 
-Debian/Ubuntu または RHL ベースの他のディストリビューションに関する情報については、 **[コミュニティでサポートされているディストリビューションに関するヒント](#tips-for-community-supported-distros)** を参照してください。
+参照してください **[コミュニティのサポートのディストリビューションに関するヒント](#tips-for-community-supported-distros)** Debian 以外の他の方法については Ubuntu または全文ベースのディストリビューション/。
 
 その他の詳細については、Live Share 必要な特定のライブラリ[を参照してください。](#detailed-library-requirements)
 
@@ -77,11 +77,11 @@ Debian/Ubuntu または RHL ツリーの外部にあるディストリビュー�
 
 | 配布 | 時? | バニラ不足ライブラリのインストール | 追加の手順 |
 |--------------|----------|-------------------|------------------|
-| アーキテクチャ Linux (64 ビット) | [はい] | て. 使用可能なライブラリ: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>[前提条件のインストールスクリプト](#install-linux-prerequisites)によってサポートされます。</li><li>VS Code には、 [visual studio](https://aur.archlinux.org/packages/visual-studio-code-bin)の AUR パッケージを使用します。</li><li>必須コンポーネントの自動インストールスクリプトを使用するには、`sudo` をインストールする必要があります。</li><li>`gnome-keyring` には、デスクトップ環境によっては、追加の[セットアップ手順](https://wiki.archlinux.org/index.php/GNOME/Keyring)が必要になる場合があります。</ul> |
-| Manjaro 17.1 (64 ビット) | [はい] | `xorg-xprop liburcu` | <ul><li>[前提条件のインストールスクリプト](#install-linux-prerequisites)によってサポートされます。</li><li>VS Code には、 [visual studio](https://aur.archlinux.org/packages/visual-studio-code-bin)の AUR パッケージを使用します。</li></ul> |
-| openSuSE LEAP 15 KDE (64 ビット) | [はい] | `libopenssl1_0_0 gnome-keyring` | <ul><li>前提条件のインストールスクリプトによってサポートされます。</li></ul> |
-| この 3 (64 ビット) | [はい] | `xprop` | <ul><li>[前提条件のインストールスクリプト](#install-linux-prerequisites)によってサポートされます。</li><li>リリース57より前の `vscode` パッケージのバージョンには、必要な製品の json 値 ([下記参照](#vs-code-oss-issues)) がありませんでした。 この問題を解決するには、`vscode` パッケージをアップグレードしてください。</li></ul> |
-| Gentoo (64 ビット) | [はい] | 高度な変数。 パッケージが見つからない可能性があります: `dev-libs/openssl-1.0.2 net-libs/libgsasl dev-libs/icu sys-libs/zlib sys-apps/util-linux app-crypt/libsecret gnome-base/gnome-keyring x11-apps/xprop`| <ul><li>**Jorgicio**オーバーレイの `visual-studio-code` パッケージが機能することがわかっています。</li></ul>
+| アーキテクチャ Linux (64 ビット) | ○ | て. 使用可能なライブラリ: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>[前提条件のインストールスクリプト](#install-linux-prerequisites)によってサポートされます。</li><li>VS Code には、 [visual studio](https://aur.archlinux.org/packages/visual-studio-code-bin)の AUR パッケージを使用します。</li><li>必須コンポーネントの自動インストールスクリプトを使用するには、`sudo` をインストールする必要があります。</li><li>`gnome-keyring` には、デスクトップ環境によっては、追加の[セットアップ手順](https://wiki.archlinux.org/index.php/GNOME/Keyring)が必要になる場合があります。</ul> |
+| Manjaro 17.1 (64 ビット) | ○ | `xorg-xprop liburcu` | <ul><li>[前提条件のインストールスクリプト](#install-linux-prerequisites)によってサポートされます。</li><li>VS Code には、 [visual studio](https://aur.archlinux.org/packages/visual-studio-code-bin)の AUR パッケージを使用します。</li></ul> |
+| openSuSE LEAP 15 KDE (64 ビット) | ○ | `libopenssl1_0_0 gnome-keyring` | <ul><li>前提条件のインストールスクリプトによってサポートされます。</li></ul> |
+| この 3 (64 ビット) | ○ | `xprop` | <ul><li>[前提条件のインストールスクリプト](#install-linux-prerequisites)によってサポートされます。</li><li>リリース57より前の `vscode` パッケージのバージョンには、必要な製品の json 値 ([下記参照](#vs-code-oss-issues)) がありませんでした。 この問題を解決するには、`vscode` パッケージをアップグレードしてください。</li></ul> |
+| Gentoo (64 ビット) | ○ | 高度な変数。 パッケージが見つからない可能性があります: `dev-libs/openssl-1.0.2 net-libs/libgsasl dev-libs/icu sys-libs/zlib sys-apps/util-linux app-crypt/libsecret gnome-base/gnome-keyring x11-apps/xprop`| <ul><li>**Jorgicio**オーバーレイの `visual-studio-code` パッケージが機能することがわかっています。</li></ul>
 
 ## <a name="install-prerequisites-manually"></a>前提条件を手動でインストールする
 
@@ -155,11 +155,11 @@ VS Code OSS のバニラまたは変更されたバージョンである Visual 
 
 代わりにコマンドを実行する場合は、[代わりにコピーする] をクリックすると、ターミナルコマンドがクリップボードにコピーされます。
 
-最後に、この手順を完全にスキップすることを選択した場合でも、[コラボレーションセッションを手動で参加](../how-to-guides/vscode.md#join-manually)させることができますが、ブラウザーで招待リンクを開いて参加することはできません。 **Ctrl + shift + p/Cmd + Shift + p キー**を押して、"Live Share: ランチャー Setup" コマンドを選択することによって、後でいつでもコマンドにアクセスできることに注意してください。
+最後に、この手順を完全にスキップすることを選択した場合でも、[コラボレーションセッションを手動で参加](../use/vscode.md#join-manually)させることができますが、ブラウザーで招待リンクを開いて参加することはできません。 **Ctrl + shift + p/Cmd + Shift + p キー**を押して、"Live Share: ランチャー Setup" コマンドを選択することによって、後でいつでもコマンドにアクセスできることに注意してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: Visual Studio Code を使用したコラボレーション](../how-to-guides/vscode.md)
+- [方法: Visual Studio Code を使用したコラボレーション](../use/vscode.md)
 - [Live Share の接続要件](connectivity.md)
 - [Live Share のセキュリティ機能](security.md)
 
