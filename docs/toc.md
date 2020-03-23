@@ -6,6 +6,7 @@
 # クイックスタート
 ## [最初のプロジェクトを共有する](quickstart/share.md)
 ## [最初のセッションに参加する](quickstart/join.md)
+## [ブラウザーからの参加](quickstart/browser-join.md)
 # 使い方ガイド:VS Code
 ## [概要](use/vscode.md)
 ## [インストール](use/vscode.md#installation)
@@ -30,7 +31,7 @@
 ## [ターミナルを共有する](use/vs.md#share-a-terminal)
 # 使い方ガイド:技術インタビュー
 ## [技術インタビュー](use/technical-interviews.md)
-# 辞書／辞典／その他
+# 関連項目
 ## [連絡先](reference/contacts.md)
 ## [セキュリティ](reference/security.md)
 ## [接続](reference/connectivity.md)
