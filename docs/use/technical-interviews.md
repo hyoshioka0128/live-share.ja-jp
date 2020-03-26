@@ -11,38 +11,40 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 810c60754c0be4f11511fb1ccbb0bb612de42e5d
-ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
+ms.openlocfilehash: 0ac1ba213c59df2dc3b1d05d89e4186c823a250f
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74019833"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295961"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
 # <a name="how-to-do-technical-interviews-using-live-share"></a>方法: Live Share を使用して技術的なインタビューを行う
 
-技術的なインタビューに Live Share の使用を開始する前に、次の[手順](../use/vscode.md)に従って、 **marketplace からダウンロード Visual Studio Code と Live Share 拡張パックをダウンロード**する必要があります。
+インタビューに Live Share を使用すると、インタビューアーと候補者は、完全に忠実な IDE またはエディターを使用して、高速で信頼性の高いインタビューセッションを行うことができます。 
 
-Live Share では、再利用可能なセッションをホストすることができます。 これは、技術的なインタビューのために Live Share セッションを事前にスケジュールでき、リンクが期限切れになる心配がないことを意味します。
 
-> [!TIP] 
->再利用可能なセッションリンクは永続的であり、作成日から30日、または前回の使用日から30日間継続します。 インタビュー用の再利用可能なセッションリンクを生成するときに、インタビューがリンクの作成日から30日以内であることを確認します。 リンクの有効期限が切れた場合は、新しい再利用可能なセッションを作成します。 (リンクが決して期限切れにならないようにする方法はありますが、これは簡単にインタビューできます)。
+## <a name="setup-for-interviewer"></a>インタビューアーのセットアップ 
+Live Share で候補にインタビューするには、次の2つのデスクトップクライアントのいずれかを最初に行う必要があります。
 
-### <a name="what-to-do-as-an-interviewer"></a>**インタビューアーとして何を行うのでしょうか。**
+Live Share 拡張機能を使用してビルドされた[Visual Studio](../use/vs.md)をインストールする
 
-インタビューアーとしては、Live Share セッションのホストとして機能します。 Live Share に慣れていない場合は、「ハウツーガイド」の「[プロジェクトを共有](../use/vscode.md)する」セクションを参照することをお勧めします。
+>[!TIP] 
+> Live Share に対して、 *ツール > オプション > Live Share > 高度な > 機能*の順に移動して、insider をオンにしてください。 これにより、組み込みのオーディオ通話サポートを使用してインタビューを行うことができます。
 
-技術的なインタビュー用の Live Share セッションを作成するには、通常のコラボレーションセッションではなく、特別な "再利用可能なセッション" を作成します。 これにより、Live Share のセッションを事前にスケジュールし、いつでも使用できるようになります。
+または、 [Visual Studio Code](../.use/vscode.md)をインストールして、marketplace から[Live Share 拡張機能パック]()をダウンロードします。 拡張機能パックは、インタビューに関するオーディオサポートを提供します。 
 
-再利用可能なセッションを作成するには、次の手順を実行します。
+## <a name="scheduling-an-interview"></a>インタビューのスケジュール設定 
+
+**VS Code の Live Share**には、事前に Live Share セッションを作成する機能が用意されています。 セッションを事前に作成するには、次の手順を実行します。
 
 1. を使用して `Command Palette` にアクセス `Ctrl+Shift+P`
-1. 「Live Sha...」と入力します。[ **_Live Share: 再利用可能なセッションリンクの作成_** ] コマンドをクリックします。
+1. 「Live Sha...」と入力します。[_Live Share: 再利用可能なセッションリンクの作成_] コマンドをクリックします。
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -50,23 +52,39 @@ Live Share では、再利用可能なセッションをホストすることが
 
 ![vscode-reusablesessionnotif](../media/vscode-notification-resuablesession.png)
 
-4. 再利用可能なセッションが作成されました。 セッションの合致とリンクを共有し、セッションにアクセスするたびに使用します。
+4. リンクを送信します。
 
 このリンクを作成したら、電子メールまたは選択したスケジュールメカニズムを使用して、interviewee と共有するだけです。 インタビュー時にそのリンクをクリックするだけで、Live Share セッションに含まれるようになります。 
+> [!TIP] 
+>再利用可能なセッションリンクは永続的であり、作成日から30日、または前回の使用日から30日間継続します。 インタビュー用の再利用可能なセッションリンクを生成するときに、インタビューがリンクの作成日から30日以内であることを確認します。 リンクの有効期限が切れた場合は、新しい再利用可能なセッションを作成します。 (リンクが決して期限切れにならないようにする方法はありますが、これは簡単にインタビューできます)。
 
-### <a name="what-to-do-as-the-interviewee"></a>**Interviewee として何を行うのでしょうか。**
+**注:** 現在、Visual Studio の Live Share には、事前にセッションを作成する機能はありません。 Visual Studio で Live Share を使用してインタビューを行う場合は、こちらのガイドに従って、ここで簡単な Live Share セッションを開始する方法に関するガイドを参照して[ください](../quickstart/share.md)。
 
-Live Share を使用して技術的なインタビューを行うことを想定している場合は、運が良ければ、 インタビュー中に快適に使用できるように、基本的な Live Share 機能について理解していることを確認します。
 
-1. インタビューの前に、Live Share のしくみを理解できるように、[操作方法に](../use/vscode.md)ついて説明します。
 
-1. インタビューを開始した後にインストールが完了するのを待たずに、事前に Visual Studio Code をインストールすることもできます。
+## <a name="setup-for-candidate"></a>候補のセットアップ
+候補は、いつでも Visual Studio または Visual Studio Code をインストールしてインタビューに参加することができますが、これを行う必要はありません。 **Live Share のインタビューセッションは、前のセットアップなしで候補として参加させることができます。** セッションの時点で面接リンクをクリックし、**ブラウザーから参加**することができます。 詳細について[は、こちらをご覧ください。](../quickstart/browser-join.md)
 
-1. 時間がない場合は、心配はありません。 インタビューのスケジュールを設定しているときに、インタビューアーから送信された Live Share セッションへのリンクが必要なのは、完全なインタビューだけです。 リンクをクリックするだけで、必要なすべての手順が自動的に実行されます。
 
-1. インタビューの時点で、リンクをクリックするだけで、手順に従うことができます。 早い段階で、またはインタビューアーがインタビューに遅れている場合は、心配しないでください。 インタビューアーが参加するのを待機している ' ロビー ' になります。 それ以外の手順は必要ありません。インタビューアーが参加すると、セッションは自動的に開始されます。
+
+<!--
+### **What to do as an Interviewer?**
+
+As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../use/vscode.md) section of our how-to guide
+### **What to do as the Interviewee?**
+
+If you are expecting to do a Technical Interview using Live Share, you are in luck! We want to make sure you are familiar with the basic Live Share features so you feel comfortable during your interview.
+
+1. Before the interview, take some time and look over the [How-to guide](../use/vscode.md) so you understand how Live Share works.
+
+1. You may want to install Visual Studio Code beforehand so that you are not waiting for the installation to complete once you start your interview
+
+1. If you don't have the time, no worries. All you need to have a full interview is the link to a Live Share session your interviewer sends you while scheduling the interview. Just clicking on the link will automatically take you through all the steps needed.
+
+1. At the time of the interview, just click on the link and follow the steps it takes you through. If you are early or your interviewer is late to the interview, don't worry! You will just be in the 'lobby' waiting for your interviewer to join. No other steps are required, and once your interviewer joins the session will automatically start.
 
 >[!NOTE]
->インタビューアーが参加する前または後にセッションが切断されていることがわかった場合は、心配しないでください。 (まだ閉じていない) 場合はそのセッションを終了し、同じリンクを再度クリックします。
+>If you find that the session has disconnected before or after the interviewer joined, don't worry. Just exit out of that session if (it isn't already closed) and re-click on the same link!
 
-これで、インタビューに Live Share を使用するように設定されました。 
+You are now all set to go with using Live Share for your interview! 
+-->

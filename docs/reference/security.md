@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2f3a2adf0be13071f22a8ea7e33800af6f9099b5
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 2d471a6d5ba84efb192073799444a13f2be62279
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170105"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295969"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,9 +32,21 @@ Visual Studio Live Share のコラボレーションセッションは、任意�
 
 ## <a name="connectivity"></a>接続
 
-Visual Studio Live Share のすべての接続は、SSH または SSL で暗号化され、中央サービスに対して認証され、コラボレーションセッション内のものだけがコンテンツにアクセスできるようにします。 既定では、Live Share は直接接続を試行し、ゲストとホスト間の接続が確立できない場合はクラウドリレーに戻ります。 Live Share の cloud relay では、トラフィックがどのようなトラフィックも保持されず、トラフィックを何らかの方法で "snoop" することはありません。 ただし、リレーを使用しない場合は、常に直接接続するように設定を変更できます。
+ピア間のセッションを開始すると、Live Share ピアツーピア接続の確立が試行され、それが不可能な場合 (たとえば、ファイアウォール/Nat による)、はクラウドリレーを使用するようにフォールバックします。 ただし、両方の種類の接続 (P2P または relay) では、ピア間で送信されるすべてのデータは、SSH プロトコルを使用してエンドツーエンドで暗号化されます。 リレー接続の場合、SSH 暗号化は、TLS で暗号化された Websocket の上位に階層化されます。 これは、Live Share が、セキュリティのためにクラウドリレーサービスに依存しないことを意味します。 リレーが侵害された場合でも、Live Share 通信の暗号化を解除できませんでした。
+
+Live Share サービスの役割は、ユーザー認証とセッション検出に限定されます。 サービス自体は、セッションのコンテンツを格納したり、それにアクセスしたりすることはありません。 Live Share 内のすべてのユーザーコンテンツは、SSH セッションを介して送信されます。 これには、コード、ターミナル、共有サーバー、Live Share または拡張機能によって提供されるその他のコラボレーション機能が含まれます。
 
 これらの動作の変更と Live Share の接続要件の詳細については、「 **[Live Share の接続要件](connectivity.md)** 」を参照してください。
+
+### <a name="wire-encryption"></a>ワイヤ暗号化 
+
+SSH プロトコルは、Diffie-hellman キー交換を使用してセッションの共有シークレットを確立し、AES 対称暗号化のキーから派生します。 暗号化キーは、セッションの間、定期的にローテーションされます。 共有セッションシークレットとすべての暗号化キーは、両方の側によってメモリ内でのみ保持され、セッションの間は有効です。 ディスクに書き込まれたり、サービスに送信されることはありません (Live Share を含む)。
+
+### <a name="peer-authentication"></a>ピア認証
+
+SSH セッションも双方向で認証されます。 ホスト (SSH サーバーロール) は、SSH プロトコルの標準として公開キーと秘密キーの認証を使用します。 ホストが Live Share セッションを共有すると、そのセッションの一意の RSA 公開キーと秘密キーのペアが生成されます。 ホストの秘密キーは、ホストプロセス内のメモリにのみ保持されます。これは、ディスクに書き込まれることも、Live Share サービスを含むサービスに送信されることもありません。 ホストの公開キーは、セッション接続情報 (IP アドレスまたはリレーエンドポイント) と共に Live Share サービスに発行され、ゲストは招待リンクを使用してアクセスできます。 ゲストは、ホストの SSH セッションに接続するときに、SSH ホスト認証プロトコルを使用して、公開された公開キーに対応する秘密キーがホストに保持されていることを検証します (ゲストが実際に秘密キーを確認することはありません)。
+
+ゲストは、Live Share トークンを使用してホストで自身を認証します。 トークンは、Live Share サービスによって発行された署名付き JWT であり、ユーザー id (MSA、AAD、または GitHub のサインインを通じて取得) に関する要求が含まれます。 また、このトークンには、ゲストに特定の Live Share セッションへのアクセスが許可されていることを示すクレームもあります (招待リンクがあるか、またはホストによって明示的に招待されているため)。 ホストは、そのトークンを検証し、要求を確認し (オプションによってはホストユーザーにプロンプトが表示される場合があります)、ゲストがセッションに参加できるようにします。
 
 ## <a name="invitations-and-join-access"></a>招待および参加へのアクセス
 
@@ -138,7 +150,7 @@ Visual Studio Live Share のすべての接続は、SSH または SSL で暗号�
 
 これらのプロパティがどのように変更されるかについて説明します。
 
-### <a name="properties"></a>プロパティ
+### <a name="properties"></a>Properties
 
 **Excludefiles**プロパティを使用すると、特定のファイルやフォルダーがゲストに対して開かれるのを Live Share 防ぐために、glob ファイルパターンのリスト (ファイルが見つかった場合とよく似たもの) を指定できます。 これには、ゲストの_フォローや編集場所へのジャンプ、共同デバッグ中のファイルのステップ実行、定義へ移動などのコードナビゲーション機能_などのシナリオが含まれていることに注意してください。 シークレット、証明書、またはパスワードが含まれている場合など、どのような状況でも共有したくないファイルを対象としています。 たとえば、はセキュリティを制御するため、vsls ファイルは常に除外されます。
 
@@ -152,7 +164,7 @@ Visual Studio Live Share のすべての接続は、SSH または SSL で暗号�
 | `hide`    | **既定値。** Glob の内部では、"hideFiles" プロパティにあるかのように処理されます。                   |
 | `exclude` | Glob の内部では、"excludeFiles" プロパティに含まれているかのように処理されます。                                 |
 
-`exclude` 設定の欠点は、node_modules のようなフォルダーの内容が頻繁に使用されることですが、デバッグ中にステップインすると便利です。 そのため、Live Share は、excludeFiles プロパティで "!" を使用してルールを反転する機能をサポートしています。 たとえば、次の例では、node_modules を除き、"gitignore に含まれるすべてのものが除外されます。
+`exclude` 設定の欠点は、node_modules のようなフォルダーの内容が頻繁に使用されることですが、デバッグ中にステップインすると便利な場合があります。 そのため、Live Share は、excludeFiles プロパティで "!" を使用してルールを反転する機能をサポートしています。 たとえば、次のように、この vsls json ファイルは、node_modules を除き、"gitignore 内のすべてを除外します。
 
 ```json
 {
@@ -164,7 +176,7 @@ Visual Studio Live Share のすべての接続は、SSH または SSL で暗号�
 }
 ```
 
-Hide および exclude の各ルールは個別に処理されるので、実際に除外しないで node_modules を非表示にしたい場合は、次のようにファイルを編集するだけで済みます。
+Hide および exclude の各ルールは個別に処理されるため、node_modules 非表示にして、実際に除外しなくても乱雑にならないようにするには、次のようにファイルを編集します。
 
 ```json
 {
@@ -205,7 +217,7 @@ Hide および exclude の各ルールは個別に処理されるので、実際
 
 読み取り専用モードの場合でも、ゲストとの共同デバッグを行うことができます。 ゲストはデバッグプロセスをステップ実行することはできませんが、ブレークポイントを追加または削除したり、変数を検査したりすることはできます。 また、サーバーと端末 (読み取り専用) をゲストと共有することもできます。
 
-読み取り専用コラボレーションセッションを開始する方法の詳細については、 [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project)を参照してください。
+読み取り専用コラボレーションセッションを開始する方法の詳細については、 [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)を参照してください。
 
 ## <a name="co-debugging"></a>共同デバッグ
 
@@ -215,11 +227,11 @@ Hide および exclude の各ルールは個別に処理されるので、実際
 
 そのため、**信頼できるものとのみ、デバッグ**する必要があります。
 
-詳細情報: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging)
+詳細情報: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
 
 ## <a name="sharing-a-local-server"></a>ローカルサーバーの共有
 
-共同デバッグを行うとき、デバッグ セッション用にホストが提供するアプリケーションのさまざまな部分にアクセスできると非常に便利です。 ブラウザーでアプリにアクセスしたり、ローカルデータベースにアクセスしたり、ツールから REST エンドポイントをヒットしたりすることができます。 Live Share を使用すると、ホストのマシン上のローカルポートをゲストのコンピューター上のまったく同じポートにマップする "サーバーを共有" できます。 ゲストとして、コンピューター上でローカルに実行されているかのようにアプリケーションと完全に対話できます (たとえば、ホストとゲストは http://localhost:3000) で実行されている web アプリにアクセスできます)。
+共同デバッグを行うとき、デバッグ セッション用にホストが提供するアプリケーションのさまざまな部分にアクセスできると非常に便利です。 ブラウザーでアプリにアクセスしたり、ローカルデータベースにアクセスしたり、ツールから REST エンドポイントをヒットしたりすることができます。 Live Share を使用すると、ホストのマシン上のローカルポートをゲストのコンピューター上のまったく同じポートにマップする "サーバーを共有" できます。 ゲストとして、コンピューター上でローカルに実行されているかのようにアプリケーションと完全に対話できます (たとえば、ホストとゲストは http://localhost:3000)で実行されている web アプリにアクセスできます)。
 
 ただし、ホストとしては、ゲストと**共有するポートを選択**し、システムポートではなくアプリケーションポートのみを共有することをお勧めします。 ゲストから見ると、共有ポートは、サーバー/サービスが自分のコンピューターで実行している場合とまったく同じように動作します。 これは非常に便利ですが、共有するポートを間違えると危険な場合もあります。 このため、Live Share は、構成設定およびホストがアクションを実行することなく、共有する必要があるかどうかを想定しているわけではありません。
 
@@ -231,7 +243,7 @@ Visual Studio Code では、Live Share**適切なアプリケーションポー�
 
 どちらの場合も、追加のポートを共有するときは注意が必要です。
 
-機能の構成の詳細については、「 [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) 」 [![](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server) 「」を参照してください。
+機能の構成の詳細については、「 [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) 」 [![](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server) 「」を参照してください。
 
 ## <a name="sharing-a-terminal"></a>ターミナルを共有する
 
@@ -245,7 +257,7 @@ Visual Studio では、既定では、ターミナルは共有されません。
 "liveshare.autoShareTerminals": false
 ```
 
-詳細情報: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal)
+詳細情報: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
 ## <a name="aad-admin-consent"></a>AAD 管理者の同意
 
@@ -258,14 +270,14 @@ AD 管理者は、次の情報を使用して、このことを解決する必�
 * **アプリケーションの状態**: 運用
 * 委任された**アクセス許可**: ユーザー。読み取り
 * **アプリケーション URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/
-* **応答 URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
+* **[応答 URL]** : https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
 これは、Live Share を使用するすべてのユーザーに対して1回だけ行う必要があります。 詳細については、こちらと[こちら](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal)を[参照して](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-* [方法: Visual Studio Code を使用したコラボレーション](../how-to-guides/vscode.md)
-* [方法: Visual Studio を使用して共同作業する](../how-to-guides/vs.md)
+* [方法: Visual Studio Code を使用したコラボレーション](../use/vscode.md)
+* [方法: Visual Studio を使用して共同作業する](../use/vs.md)
 * [Live Share の接続要件](connectivity.md)
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。
