@@ -11,11 +11,11 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 32fc12da3b26ccb1f6d5b984915dfd0cc6afd647
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 04/09/2020
 ms.locfileid: "73170014"
 ---
 <!--
@@ -46,7 +46,7 @@ Change the instructions to Install extension for VS Code and in-tool for VS?
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
-        1. Windows (7、8.1、または 10)、macOS <b>(Sierra+)</b>、64 ビット Linux <b>(<a href="../how-to-guides/vscode.md#installation">詳細</a>)</b> 用の <a href="https://code.visualstudio.com/">Visual Studio Code</a> をインストールします<br />
+        1. Windows (7、8.1、または 10)、macOS <b>(Sierra+)</b>、64 ビット Linux <b>(<a href="../use/vscode.md#installation">詳細</a>)</b> 用の <a href="https://code.visualstudio.com/">Visual Studio Code</a> をインストールします<br />
         2. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
         3. 再度読み込み、依存関係がダウンロードおよびインストールされるまで待機します (ステータス バーを参照)。<br />
         4. <strong>Linux</strong>:<a href="../reference/linux.md#install-linux-prerequisites">ライブラリのインストール</a>を求められた場合は、インストールをクリックし、パスワードを入力して、完了したら VS Code を再起動します。<br />
@@ -58,7 +58,7 @@ Change the instructions to Install extension for VS Code and in-tool for VS?
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1.<a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a> をインストールします。<br/>
-        2. <a href="../reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Python、Node.js)<br />
+        2.<a href="../reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Python、Node.js)<br />
         3. Visual Studio Live Share は、既定でこれらのワークロードと共にインストールされます。 <br />
     </td>
 </tr>
@@ -67,7 +67,7 @@ Change the instructions to Install extension for VS Code and in-tool for VS?
     <td  style="border:none;">
         <strong>Visual Studio 2017 15.6 以上</strong><br />
         1. 最新バージョンの <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) を Windows (7、8.1、または 10) にインストールします。<br/>
-        2. <a href="../reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
+        2.<a href="../reference/platform-support.md">サポートされているワークロード</a>をインストールします。 (例: ASP.NET、.NET Core、C++、Node.js)<br />
         3. マーケットプレースから Visual Studio Live Share 拡張機能をダウンロードしてインストールします。 <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
@@ -98,7 +98,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 
 ![Web ブラウザーを使用してサインインを求めるトースト通知](../media/vscode-sign-in-toast.png)
 
-> **Linux ユーザー:** Live Share の古いバージョン (v0.3.295 以前) を使用している場合は、ユーザー コードの入力を求められる場合があります。 最新バージョンの拡張機能に更新するか、サインイン後に [問題が発生した場合] の リンクをクリックしてコードを表示します。 詳細については、[こちら](../how-to-guides/vscode.md#sign-in-using-a-user-code)をご覧ください。
+> **Linux ユーザー:** Live Share の古いバージョン (v0.3.295 以前) を使用している場合は、ユーザー コードの入力を求められる場合があります。 最新バージョンの拡張機能に更新するか、サインイン後に [問題が発生した場合] の リンクをクリックしてコードを表示します。 詳細については、[こちら](../use/vscode.md#sign-in-using-a-user-code)をご覧ください。
 
 **Visual Studio** では、ユーザーの[個人アカウント](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)が Live Share によって自動的に使用されます。 その結果、いつものように簡単にサインインできます。 ただし、Visual Studio の個人アカウント以外の別のサインインを使用する場合は、 **[ツール] &gt; [オプション] &gt; [Live Share] &gt; [ユーザー アカウント]** の順に移動し、別の資格情報を選択します。
 
@@ -130,7 +130,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 </table>
 
 > [!NOTE]
-> 初めてを共有するときに、Live Share エージェントがポートを開くのを許可するように、デスクトップのファイアウォール ソフトウェアから求められる場合があります。 これを受け入れるかどうかは任意ですが、共同作業する人が同じネットワーク上にいるときには、セキュリティで保護された "ダイレクト モード" を有効にしてパフォーマンスを向上させます。 詳細については、[接続モードを変更する](../reference/connectivity.md#changing-the-connection-mode)のセクションを参照してください。
+> 初めて共有するときに、Live Share エージェントがポートを開くのを許可するように、デスクトップのファイアウォール ソフトウェアから求められる場合があります。 これを受け入れるかどうかは任意ですが、共同作業する人が同じネットワーク上にいるときには、セキュリティで保護された "ダイレクト モード" を有効にしてパフォーマンスを向上させます。 詳細については、[接続モードを変更する](../reference/connectivity.md#changing-the-connection-mode)のセクションを参照してください。
 
 ## <a name="6-optional-enable-read-only-mode"></a>6. [省略可能] 読み取り専用モードを有効にする
 
@@ -190,7 +190,7 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 1. ゲストのマシンで実行されている Web アプリのようにチェックアウトできるように、サーバーを共有する
 1. ターミナルを共有してコマンドをいくつか実行してみる
 
-これらのアクションを実行する方法などの詳細は、[Visual Studio Code](../how-to-guides/vscode.md) と [Visual Studio](../how-to-guides/vs.md) 拡張機能のドキュメントをご確認ください。
+これらのアクションを実行する方法などの詳細は、[Visual Studio Code](../use/vscode.md) と [Visual Studio](../use/vs.md) 拡張機能のドキュメントをご確認ください。
 
 問題が発生していますか? [トラブルシューティング](../troubleshooting.md)または[フィードバックの送信](../support.md)に関するページをご覧ください。
 
@@ -199,10 +199,10 @@ Live Share の拡張機能をインストールし、再起動し、依存関係
 詳細については、次の記事をご確認ください。
 
 - [クイック スタート:コラボレーション セッションに初めて参加する](join.md)
-- [方法:Visual Studio Code を使用して共同作業する](../how-to-guides/vscode.md)
-- [方法:Visual Studio を使用して共同作業する](../how-to-guides/vs.md)
+- [方法:Visual Studio Code を使用して共同作業する](../use/vscode.md)
+- [方法:Visual Studio を使用して共同作業する](../use/vs.md)
 
-辞書／辞典／その他
+関連項目
 
 - [Live Share の接続要件](../reference/connectivity.md)
 - [Live Share のセキュリティ機能](../reference/security.md)
