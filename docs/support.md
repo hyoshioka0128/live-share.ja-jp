@@ -36,7 +36,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 - **VS Code バグ:** [新しい問題をログに記録](https://aka.ms/vsls-new-issue)します。 [Live Share: エクスポートログ] コマンドを使用して、 [zip を](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/)バグにドラッグアンドドロップするか、[電子メールで送信](mailto:vsls-feedback@microsoft.com)します。
 - **VS バグ:** [フィードバックの送信 > 問題の報告のためのヘルプ >](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) ...送信前に問題を再現すると、ログは自動接続されます。
 - **機能の要求:** [新しい要求をログに記録](https://aka.ms/vsls-new-issue)するか、👍 の反応を使用して既存の要求に[投票](https://aka.ms/vsls-feature-requests)します。
-- **お問い合わせ:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)、 [#vsliveshare](https://aka.ms/vsls-twitter)、またはコミュニティ実行の[余裕期間](https://aka.ms/vsls-slack)。
+- **お問い合わせ:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)、 [#vsliveshare](https://aka.ms/vsls-twitter)、またはコミュニティ運営の[Slack](https://aka.ms/vsls-slack)。
 
 詳細については以下を参照してください。
 
@@ -64,7 +64,7 @@ GitHub の問題と Visual Studio の問題レポートは、お客様とつな�
 
 - **電子メール:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
 - **Twitter:** [#Vsliveshare](https://aka.ms/vsls-twitter)を使用して Twitter にご連絡ください。
-- **余裕期間:** また、コミュニティの実行[Live Share の余裕](https://aka.ms/vsls-slack)についても説明します。
+- **Slack:** また、コミュニティの実行[Live Share の余裕](https://aka.ms/vsls-slack)についても説明します。
 
 ## <a name="see-also"></a>関連項目
 
