@@ -43,7 +43,7 @@ Live Share 拡張機能を使用してビルドされた[Visual Studio](../use/v
 
 **VS Code の Live Share**には、事前に Live Share セッションを作成する機能が用意されています。 セッションを事前に作成するには、次の手順を実行します。
 
-1. `Ctrl+Shift+P` を使用して `Command Palette` にアクセスします。
+1. `Ctrl+Shift+P` を使用して `コマンド パレット` にアクセスします。
 1. 「Live Sha...」と入力します。[_Live Share: 再利用可能なセッションリンクの作成_] コマンドをクリックします。
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
