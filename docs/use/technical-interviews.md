@@ -44,7 +44,7 @@ Live Share 拡張機能を使用してビルドされた[Visual Studio](../use/v
 **VS Code の Live Share**には、事前に Live Share セッションを作成する機能が用意されています。 セッションを事前に作成するには、次の手順を実行します。
 
 1. を使用して `Command Palette` にアクセス `Ctrl+Shift+P`
-1. 「Live Sha...」と入力します。[_Live Share: 再利用可能なセッションリンクの作成_] コマンドをクリックします。
+1. 「Live Sha...」と入力します。[_Live Share: Create Reusable Session link_] コマンドをクリックします。
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -58,12 +58,12 @@ Live Share 拡張機能を使用してビルドされた[Visual Studio](../use/v
 > [!TIP] 
 >再利用可能なセッションリンクは永続的であり、作成日から30日、または前回の使用日から30日間継続します。 インタビュー用の再利用可能なセッションリンクを生成するときに、インタビューがリンクの作成日から30日以内であることを確認します。 リンクの有効期限が切れた場合は、新しい再利用可能なセッションを作成します。 (リンクが決して期限切れにならないようにする方法はありますが、これは簡単にインタビューできます)。
 
-**注:** 現在、Visual Studio の Live Share には、事前にセッションを作成する機能はありません。 Visual Studio で Live Share を使用してインタビューを行う場合は、こちらのガイドに従って、ここで簡単な Live Share セッションを開始する方法に関するガイドを参照して[ください](../quickstart/share.md)。
+**注:** 現在、Visual Studio の Live Share には、事前にセッションを作成する機能はありません。 Visual Studio で Live Share を使用してインタビューを行う場合は、[こちら](../quickstart/share.md)のガイドに従って、ここで簡単な Live Share セッションを開始する方法に関するガイドを参照してください。
 
 
 
 ## <a name="setup-for-candidate"></a>候補のセットアップ
-候補は、いつでも Visual Studio または Visual Studio Code をインストールしてインタビューに参加することができますが、これを行う必要はありません。 **Live Share のインタビューセッションは、前のセットアップなしで候補として参加させることができます。** セッションの時点で面接リンクをクリックし、**ブラウザーから参加**することができます。 詳細について[は、こちらをご覧ください。](../quickstart/browser-join.md)
+候補は、いつでも Visual Studio または Visual Studio Code をインストールしてインタビューに参加することができますが、これを行う必要はありません。 **Live Share のインタビューセッションは、前のセットアップなしで候補として参加させることができます。** セッションの時点で面接リンクをクリックし、**ブラウザーから参加**することができます。 詳細については、[こちら](../quickstart/browser-join.md)をご覧ください。
 
 
 
