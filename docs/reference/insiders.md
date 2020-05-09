@@ -24,11 +24,11 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="insiders"></a>インサイダー
+# <a name="insiders"></a>Insider
 
-Visual Studio Live Share チームは、迅速に反復処理し、新しいアイデアを試し、顧客をリッスンすることに関するものです。 内部関係者は、すべての新機能を最初に試して、お客様の貴重なフィードバックを提供する機会をユーザーに提供します。 以下の内部者に[なる](#BecomeanInsider)方法について説明し、開発者による共同作業の計画を支援します。 
+Visual Studio Live Share チームは、迅速に反復処理し、新しいアイデアを試し、顧客をリッスンすることに関するものです。 Insider は、すべての新機能を最初に試して、お客様の貴重なフィードバックを提供する機会をユーザーに提供します。 以下の[Insider になる](#BecomeanInsider)方法について説明し、開発者による共同作業の計画を支援します。 
 
-## <a name="new-to-insiders"></a>内部関係者に新しい✨✨
+## <a name="new-to-insiders"></a>✨Insider の新機能✨
 
 
 ### <a name="reusable-sessions-vs-code"></a>**再利用可能なセッション (VS Code)**
@@ -37,7 +37,7 @@ Live Share は再利用可能なセッションをホストできるようにな
 
 再利用可能なセッションを作成するには、次の手順を実行します。
 1. を使用して `Command Palette` にアクセス `Ctrl+Shift+P`
-1. 「Live Sha...」と入力します。[ **_Live Share: 再利用可能なセッションリンクの作成_** ] コマンドをクリックします。
+1. 「Live Sha...」と入力します。[ **_Live Share: Create Reusable Session link_** ] コマンドをクリックします。
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -52,7 +52,7 @@ Live Share は再利用可能なセッションをホストできるようにな
  
 
 
-## Insider <a name="BecomeanInsider"></a>になる
+## Insider になる<a name="BecomeanInsider"> </a>
 
 既定では、Visual Studio Live Share 拡張機能をインストールした後、`Stable` 機能セットを使用しています。これには、すべての実稼働対応機能 (共同編集、共有デバッグ、ターミナルなど) が含まれます。 ただし、作業中の機能にすぐにアクセスできるようにするには、IDE で次の設定を変更して `Insiders` 機能セットを選択します。
 
