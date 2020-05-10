@@ -34,7 +34,7 @@ Visual Studio Live Share の主な目的は、開発者が相互に簡単に共�
     - [オフィス時間](#office-hours)
 - [ペアプログラミング](#pair-programming)
     - [Mob プログラミング](#mob-programming)
-    - [コンペティション/ハッキングのコーディング-A Thons](#coding-competitions--hack-a-thons)
+    - [コーディング大会/ハッカソン](#coding-competitions--hack-a-thons)
     - [学校グループのプロジェクト](#school-group-projects)
     - [開発者向けストリーミング](#developer-streaming)
     - [プロトタイプ/プロジェクトの開始](#prototyping--project-inception)
@@ -83,7 +83,7 @@ Live Share は、前述のすべての懸念事項に依存しないように設
 > - **VS Code:** liveshare に "increasedGuestLimit": "true" を追加します。
 > - **VS:** ゲスト制限を "True" に > Live Share ツール > オプションを設定 > 
 
-### <a name="coding-competitions--hack-a-thons"></a>コンペティション/ハッキングのコーディング-A Thons
+### <a name="coding-competitions--hack-a-thons"></a>コーディング大会/ハッカソン
 
 コンペティションとハッキングをコーディングすることは、mob プログラミングの効率が非常に短い、単一タスクのバリエーションです。 チームのメンバーとその現在のロールも、動的な可能性があります。 このユースケースは通常、時間に依存しているため、まったく新しいツールを導入しなくても、リアルタイムで共同作業を行うことができます。また、1つの画面やキーボードに限定されずに連携することもできます。報酬.
 
