@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0ac1ba213c59df2dc3b1d05d89e4186c823a250f
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: db2365b92f5b18198a2f976e1c6ce3d5abb755c5
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295961"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569523"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -35,15 +35,15 @@ Live Share で候補にインタビューするには、次の2つのデスク�
 Live Share 拡張機能を使用してビルドされた[Visual Studio](../use/vs.md)をインストールする
 
 >[!TIP] 
-> Live Share に対して、 *ツール > オプション > Live Share > 高度な > 機能*の順に移動して、insider をオンにしてください。 これにより、組み込みのオーディオ通話サポートを使用してインタビューを行うことができます。
+> Live Share に対して、 *[ツール] [> オプション] > Live Share > 高度な > 機能]* の順に移動して、insider をオンにしてください。 これにより、組み込みのオーディオ通話サポートを使用してインタビューを行うことができます。
 
-または、 [Visual Studio Code](../.use/vscode.md)をインストールして、marketplace から[Live Share 拡張機能パック]()をダウンロードします。 拡張機能パックは、インタビューに関するオーディオサポートを提供します。 
+または、 [Visual Studio Code](../use/vscode.md)をインストールして、marketplace から[Live Share 拡張機能パック](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)をダウンロードします。 拡張機能パックは、インタビューに関するオーディオサポートを提供します。 
 
 ## <a name="scheduling-an-interview"></a>インタビューのスケジュール設定 
 
 **VS Code の Live Share**には、事前に Live Share セッションを作成する機能が用意されています。 セッションを事前に作成するには、次の手順を実行します。
 
-1. を使用して `Command Palette` にアクセス `Ctrl+Shift+P`
+1. を使用してにアクセスします。 `Command Palette``Ctrl+Shift+P`
 1. 「Live Sha...」と入力します。[_Live Share: 再利用可能なセッションリンクの作成_] コマンドをクリックします。
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
