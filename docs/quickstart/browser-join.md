@@ -1,6 +1,6 @@
 ---
 title: ブラウザーからの参加-Visual Studio Live Share |Microsoft Docs
-description: その browser からの結合の概要
+description: ブラウザーからの結合の概要
 ms.date: 03/18/2020
 ms.reviewer: ''
 ms.suite: ''
@@ -10,12 +10,12 @@ ms.author: fishah
 manager: joncart
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9544e1ad333903c663b9b4ecda35ca745020b4ae
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: 5e485397ff23be0fdab8449fad6237d829775c55
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295914"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569536"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -25,7 +25,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="preview-joining-a-live-share-session-from-the-browser"></a>✨ [プレビュー] ✨ブラウザーから Live Share セッションに参加する
 
-すべての Live Share コラボレーションセッションで、ブラウザーから参加できるようになりました。 これは、セッションのゲストがセッションに参加するために VS Code または Visual Studio をインストールする必要がなくなったことを意味します。 これは、ユーザーがセッションにすばやくアクセスできるようにする場合や、多くの場合、デスクトップクライアントがインストールされていない学生の場合に、このようなすべてのインスタンスに役立ちます。
+すべての Live Share コラボレーションセッションは、ブラウザーから参加できるようになりました。 これは、セッションのゲストがセッションに参加するために VS Code または Visual Studio をインストールする必要がなくなったことを意味します。 これは、ユーザーがセッションにすばやくアクセスできるようにする場合や、多くの場合、デスクトップクライアントがインストールされていない学生の場合に、このようなすべてのインスタンスに役立ちます。
 
 
 # <a name="how-to-join-a-live-share-session-from-the-browser"></a>Live Share セッションをブラウザーから参加させる方法 

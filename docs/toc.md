@@ -3,6 +3,7 @@
 ## [はじめに](index.md)
 ## [機能](overview/features.md)
 ## [一般的なユース ケース](reference/use-cases.md)
+## [新機能](overview/what's-new.md)
 # クイックスタート
 ## [最初のプロジェクトを共有する](quickstart/share.md)
 ## [最初のセッションに参加する](quickstart/join.md)
